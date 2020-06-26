@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/*-------------------------------- Navbar */
+
+i {
+    margin-right: 5px;
+}
+
+.navbar-wrapper {
+    background-color: #c92b2b;
+}
+
+.dropdown-menu {
+    position: relative;
+    top: 4rem;
+    background-color: #c92b2b;
+    border: none;
+
+}
+
+.dropdown-item {
+    color: #ffffff;
+}
+
+li a {
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#nav-link-login {
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #ffffff;
+}
