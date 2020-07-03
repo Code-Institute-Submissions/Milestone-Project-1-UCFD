@@ -88,9 +88,14 @@ li a {
 
 }
 
+.fixtures-home-team h3 {
+    float: right;
+}
+
 .fixtures-home-logo img {
     width: 40px;
     height: 40px;
+    float: right;
 }
 
 .fixtures-kick-off {
