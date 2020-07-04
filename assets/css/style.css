@@ -56,6 +56,7 @@ li a {
 
 .fixtures-wrapper {
     margin-top: 1rem;
+    margin-bottom: 2rem;
     padding-left: 15px;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -119,8 +120,8 @@ li a {
 
 .fixtures-kick-off h3 {
     font-family: "Exo", sans-serif;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 700;
     color: #505050;
 }
 
@@ -150,3 +151,40 @@ li a {
     float: right;
 
 }
+
+/*-------------------------------- Footer */
+
+.bayern-footer {
+    min-height: 500px;
+    background-color: #c92b2b;
+}
+
+.bayern-footer-sponsors {
+    text-align: center;
+    padding-top: 1rem;
+    line-height: 5rem;
+}
+
+.bayern-footer-sponsors img {
+    height: 50px;
+}
+
+@media screen and (max-width: 576px) {
+    .bayern-footer-sponsors img {
+    height: 30px;
+}
+}
+
+@media screen and (max-width: 768px) {
+    .bayern-footer-sponsors img {
+    height: 40px;
+}
+}
+
+@media screen and (max-width: 992px) {
+    .bayern-footer-sponsors img {
+    height: 40px;
+}
+}
+
+   
