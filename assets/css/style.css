@@ -62,6 +62,13 @@ li a {
 
 }
 
+.fixtures-month h3 {
+    font-family: "Exo", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #505050;
+}
+
 .fixture-league-name h3 {
     font-family: "Exo", sans-serif;
     font-size: 16px;
