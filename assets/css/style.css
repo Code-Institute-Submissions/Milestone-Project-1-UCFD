@@ -53,6 +53,7 @@ li a {
     padding-left: 15px;
 }
 
+
 .fixtures-wrapper {
     margin-top: 1rem;
     padding-left: 15px;
@@ -67,6 +68,11 @@ li a {
     font-size: 24px;
     font-weight: 600;
     color: #505050;
+}
+
+.fixtures-month-nav a {
+    font-family: "Exo", sans-serif;
+    font-size: 12px;
 }
 
 .fixture-league-name h3 {
