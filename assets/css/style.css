@@ -121,7 +121,7 @@ li a {
 .fixtures-kick-off h3 {
     font-family: "Exo", sans-serif;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     color: #505050;
 }
 
@@ -187,4 +187,7 @@ li a {
 }
 }
 
+#footer-logo-adidas div {
+    width: 40px;
+}
    
