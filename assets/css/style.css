@@ -155,7 +155,7 @@ li a {
 /*-------------------------------- Footer */
 
 .bayern-footer {
-    min-height: 500px;
+    min-height: 600px;
     background-color: #c92b2b;
 }
 
@@ -187,7 +187,31 @@ li a {
 }
 }
 
-#footer-logo-adidas div {
-    width: 40px;
+.footer-social-media i {
+    font-size: 40px;
+    margin-top: 4rem;
+    color: #ffffff;
 }
+
+.footer-social-media i:hover {
+    color: #797979;
+}
+
+.footer-nav-section {
+    margin-top: 8rem;
+}
+
+.footer-nav-section ul {
+    list-style-type: none;
+}
+
+.footer-nav-section a {
+    font-family: "Exo", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 2rem;
+}
+
+
    
