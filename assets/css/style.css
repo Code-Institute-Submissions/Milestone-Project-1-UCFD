@@ -96,7 +96,7 @@ li a {
 
 .fixtures-content h3 {
     font-family: "Exo", sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
     color: #505050;
 
@@ -172,23 +172,24 @@ li a {
 @media screen and (max-width: 576px) {
     .bayern-footer-sponsors img {
     height: 30px;
+ 
 }
 }
 
 @media screen and (max-width: 768px) {
     .bayern-footer-sponsors img {
-    height: 40px;
+    height: 30px;
 }
 }
 
 @media screen and (max-width: 992px) {
     .bayern-footer-sponsors img {
-    height: 40px;
+    height: 30px;
 }
 }
 
 .footer-social-media i {
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 4rem;
     color: #ffffff;
 }
@@ -203,6 +204,10 @@ li a {
 
 .footer-nav-section ul {
     list-style-type: none;
+    border-right: 1px solid #ffffff;
+    height: 176px;
+    padding: 0px;
+    margin-left: 1rem;
 }
 
 .footer-nav-section a {
@@ -211,6 +216,20 @@ li a {
     font-weight: 300;
     color: #ffffff;
     line-height: 2rem;
+}
+
+.top-nav-button a {
+    font-family: "Exo", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 4rem;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.top-nav-button div {
+    display: flex;
+    justify-content: center;
 }
 
 
