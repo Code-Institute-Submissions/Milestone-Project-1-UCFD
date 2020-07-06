@@ -43,11 +43,7 @@ li a {
 
 /*-------------------------------- Home page */
 
-
-
-/*-------------------------------- Fixtures / Results */
-
-.fixtures-heading {
+.bayern-heading {
     font-family: "Exo", sans-serif;
     font-size: 28px;
     font-weight: 600;
@@ -57,6 +53,30 @@ li a {
     padding-left: 15px;
 }
 
+
+.club-news-section div {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.club-news-section img {
+    width: 300px;
+    margin-top: 2rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.club-news-section a {
+    font-family: "Exo", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #505050;
+    width: 300px;
+}
+
+/*-------------------------------- Fixtures / Results */
 
 .fixtures-wrapper {
     margin-top: 1rem;
