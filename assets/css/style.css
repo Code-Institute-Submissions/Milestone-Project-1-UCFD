@@ -63,16 +63,22 @@ li a {
 
 .club-news-section img {
     width: 300px;
-    margin-top: 2rem;
-    display: block;
-    margin: 0 auto;
+   
 }
 
 .club-news-section a {
     font-family: "Exo", sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
     color: #505050;
+    width: 300px;
+}
+
+.club-news-section p {
+    font-family: "Exo", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #797979;
     width: 300px;
 }
 
