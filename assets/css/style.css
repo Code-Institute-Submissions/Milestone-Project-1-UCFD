@@ -252,7 +252,7 @@ li a {
 /*-------------------------------- Footer */
 
 .bayern-footer {
-    min-height: 600px;
+    min-height: 100vh;
     background-color: #c92b2b;
 }
 
@@ -296,7 +296,7 @@ li a {
 }
 
 .footer-nav-section {
-    margin-top: 8rem;
+    margin-top: 12rem;
 }
 
 .footer-nav-section ul {
