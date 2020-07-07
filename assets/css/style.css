@@ -41,7 +41,7 @@ li a {
     color: #ffffff;
 }
 
-/*-------------------------------- Home page */
+/*------------------------------------------------------------ Home page */
 
 .bayern-heading {
     font-family: "Exo", sans-serif;
@@ -53,9 +53,11 @@ li a {
     padding-left: 15px;
 }
 
+/*-------------------------------- Club news */
+
 
 .club-news-section div {
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,6 +65,8 @@ li a {
 
 .club-news-section img {
     width: 300px;
+    box-shadow: 10px 10px 40px #777;
+    margin-bottom: 1rem;
    
 }
 
@@ -72,6 +76,7 @@ li a {
     font-weight: 600;
     color: #505050;
     width: 300px;
+
 }
 
 .club-news-section p {
@@ -81,6 +86,49 @@ li a {
     color: #797979;
     width: 300px;
 }
+
+/*-------------------------------- Shop section  */
+
+.shop-section-row div {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.shop-section img {
+    width: 70vw;
+    box-shadow: 10px 10px 40px #777;
+    margin-bottom: 1rem;
+}
+
+.shop-section h3 {
+    width: 70vw;
+    font-family: "Exo", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #505050;
+}
+
+.shop-section p {
+    width: 70vw;
+    font-family: "Exo", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #797979;
+}
+
+.view-shop-button a  {
+    font-family: "Exo", sans-serif;
+    font-size: 14px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /*-------------------------------- Fixtures / Results */
 
