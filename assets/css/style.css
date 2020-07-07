@@ -89,7 +89,7 @@ li a {
 
 @media (min-width: 1200px) {
     .club-news-section img {
-        width: 350px;
+        width: 340px;
     }
 }
 
@@ -187,6 +187,12 @@ li a {
 
 }
 
+@media (min-width: 768px) {
+    .fixtures-content h3 {
+    font-size: 16px;
+    }
+}
+
 .fixtures-home-team h3 {
     float: right;
 }
@@ -205,9 +211,15 @@ li a {
 
 .fixtures-kick-off h3 {
     font-family: "Exo", sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     color: #505050;
+}
+
+@media (max-width: 576px) {
+    .fixtures-kick-off h3 {
+    font-size: 12px;
+    }
 }
 
 .fixtures-away-logo img {
