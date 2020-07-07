@@ -87,6 +87,12 @@ li a {
     width: 300px;
 }
 
+@media (min-width: 1200px) {
+    .club-news-section img {
+        width: 350px;
+    }
+}
+
 /*-------------------------------- Shop section  */
 
 .shop-section-row div {
@@ -110,6 +116,7 @@ li a {
     font-size: 28px;
     font-weight: 500;
     color: #505050;
+    text-decoration: none;
 }
 
 .shop-section p {
