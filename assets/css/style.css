@@ -264,14 +264,15 @@ li a {
 
 .players-section img {
     width: 120px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    box-shadow: 10px 5px 20px #999;
 }
 
 .players-section h3 {
     font-family: "Exo", sans-serif;
     font-size: 18px;
     font-weight: 500;
-    color: #797979;
+    color: #505050;
     text-align: center;
     margin-bottom: 1rem;
 }
