@@ -256,6 +256,33 @@ li a {
     width: 100vw;
 }
 
+.players-section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.players-section img {
+    width: 120px;
+    margin-bottom: 5px;
+}
+
+.players-section h3 {
+    font-family: "Exo", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #797979;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .players-section img {
+        width: 200px;
+        font-size: 24px;
+    }
+}
+
 
 /*-------------------------------- Footer */
 
