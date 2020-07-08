@@ -249,6 +249,14 @@ li a {
 
 }
 
+/*-------------------------------- Teams */
+
+
+.team-hero-image img {
+    width: 100vw;
+}
+
+
 /*-------------------------------- Footer */
 
 .bayern-footer {
@@ -265,6 +273,8 @@ li a {
 .bayern-footer-sponsors img {
     height: 50px;
 }
+
+
 
 @media screen and (max-width: 576px) {
     .bayern-footer-sponsors img {
