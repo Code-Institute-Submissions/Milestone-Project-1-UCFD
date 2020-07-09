@@ -105,10 +105,18 @@ li a {
 
 
 .shop-section img {
-    width: 70vw;
+    width: 90vw;
     box-shadow: 10px 10px 40px #777;
     margin-bottom: 1rem;
 }
+
+@media (min-width: 768px) {
+    .shop-section img {
+        width: 70vw;
+    }
+}
+
+
 
 .shop-section h3 {
     width: 70vw;
@@ -127,13 +135,18 @@ li a {
     color: #797979;
 }
 
-.view-shop-button a  {
-    font-family: "Exo", sans-serif;
-    font-size: 14px;
-    margin-bottom: 1rem;
+.view-page-button div {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.view-page-button a  {
+    font-family: "Exo", sans-serif;
+    font-size: 14px;
+    margin-bottom: 1rem;
+    width: 120px;
+    float: right;
 }
 
 
