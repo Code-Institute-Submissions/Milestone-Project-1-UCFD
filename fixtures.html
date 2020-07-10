@@ -9,6 +9,7 @@
     <title>FC Bayern World</title>
 </head>
 <body>
+    <!--For my navigation menu I used a bootstrap navbar which collapses into a dropdown menu on smaller screen sizes-->
     <div class="container-fluid navbar-wrapper">
         <nav class="navbar navbar-expand-md navbar-dark">
         <a class="navbar-brand" href="index.html"><img src="../assets/images/teams/bayern-munchen.png" alt="logo"></a>
@@ -33,7 +34,7 @@
             </li>
         </ul>
         <a href="index.html" id="nav-link-login" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-user"></i>  Log in</a>
-        
+<!--For the log in button I added a bootstrap modal which would enable users to log into their account--> 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -77,12 +78,14 @@
             </div>
         </div>
     </div>
+    <!--I added the months into my fixtures table to improve the user experience-->
     <div class="container fixtures-wrapper">
         <div class="row fixtures-month" id="january">
             <div class="col-12">
                  <h3>January</h3>
             </div>
         </div>
+        <!--I added a navagation bar using bootstrap to enable to the user to be able to easily navigate between the months-->
         <div class="row justify-content-end fixtures-month-nav">
             <div class="col-12">
                 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
@@ -98,6 +101,7 @@
             </div>
         </div>
     <hr>
+        <!--To create my result table I used the bootstrap grid system which responds accross all screen sizes-->
         <div class="row fixture-league-name justify-content-start">
             <div class="col-12">
                 <h3>Bundesliga</h3>
@@ -1026,9 +1030,11 @@
             </div>
         </div>
     </div>
-
+<!--To build my footer section I used the bootstrap grid system which responds fully accross all screen sizes-->
 <footer class="bayern-footer">
     <div class="container">
+       <!--I used the bootstrap justify-content-center class to center all content-->
+        <!--in this section i added some of the sponsors of Bayern Munchen and have provided a link to their websites-->
        <div class="row justify-content-center bayern-footer-sponsors">
            <div class="col-4 col-md-3">
               <a href="https://www.adidas.co.uk/men?cm_mmc=AdieSEM_Google-_-adidas-Brand-B-Exact-_-Brand-adidas-Men-_-adidas&cm_mmca1=UK&cm_mmca2=e&ds_kid=43700019176333921&gclid=EAIaIQobChMI5o6A0PS16gIVme3tCh2ehQgkEAAYASAAEgLG7fD_BwE&gclsrc=aw.ds" target="_blank">
@@ -1061,10 +1067,11 @@
               </a>
            </div>
         </div>
-        
+        <!--In this section I added anchor links to Bayern Munchens social media pages-->
         <div class="row justify-content-center footer-social-media">
             <div class="col-2 col-md-1">
                 <a href="https://www.facebook.com/fcbayern.en/" target="_blank">
+                <!--For the icons I used font awesome-->
                 <i class="fab fa-facebook-f"></i>
                 </a>
                 <span class="sr-only">Facebook</span>
@@ -1088,12 +1095,14 @@
                 <span class="sr-only">Twitter</span>
             </div>
         </div>
+        <!--Here I added a button to take the user back to the top of the page to improve navigation-->
         <div class="row top-nav-button justify-content-center">
             <div class="col-6 col-lg-2">
                  <a href="#" class="btn">Back to top</a>
             </div>
         </div>
     </div>
+<!--I used the bootstrap grid system for the footer nav section which is made from an unordered list -->
 <div class="container-fluid">
     <div class="row footer-nav-section justify-content-start">
             <div class="col-4 col-md-4 col-lg-2">
