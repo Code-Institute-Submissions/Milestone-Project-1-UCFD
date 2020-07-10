@@ -27,6 +27,7 @@ i {
     color: #ffffff;
 }
 
+/* Throughout my site i have used the Exo google font and have chosen sans sarif as a fall back if the browser fails to load Exo */
 li a {
     font-family: "Exo", sans-serif;
     font-weight: 400;
@@ -41,7 +42,7 @@ li a {
     color: #ffffff;
 }
 
-/*------------------------------------------------------------ Home page */
+/*-------------------------------- Headings */
 
 .bayern-heading {
     font-family: "Exo", sans-serif;
@@ -53,9 +54,11 @@ li a {
     padding-left: 15px;
 }
 
+/*------------------------------------------------------------ Home page */
+
 /*-------------------------------- Club news */
 
-
+/* I watched a you tube tutorial on how to use the display flex function to center content https://www.youtube.com/watch?v=mVYgtzDLZfY */
 .club-news-section div {
     margin-bottom: 1rem;
     display: flex;
@@ -63,6 +66,7 @@ li a {
     align-items: center;
 }
 
+/* To add the shadow to my images I found this on stack overflow https://stackoverflow.com/questions/14084542/htmlcss-how-to-add-shadow-as-image-to-image */
 .club-news-section img {
     width: 300px;
     box-shadow: 10px 10px 40px #777;
@@ -95,6 +99,7 @@ li a {
 
 /*-------------------------------- Shop section  */
 
+/* I watched a you tube tutorial on how to use the display flex function to center content https://www.youtube.com/watch?v=mVYgtzDLZfY */
 .shop-section-row div {
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -103,7 +108,7 @@ li a {
     align-items: center;
 }
 
-
+/* To add the shadow to my images I found this on stack overflow https://stackoverflow.com/questions/14084542/htmlcss-how-to-add-shadow-as-image-to-image */
 .shop-section img {
     width: 90vw;
     box-shadow: 10px 10px 40px #777;
@@ -115,8 +120,6 @@ li a {
         width: 70vw;
     }
 }
-
-
 
 .shop-section h3 {
     width: 70vw;
@@ -135,6 +138,7 @@ li a {
     color: #797979;
 }
 
+/* I watched a you tube tutorial on how to use the display flex function to center content https://www.youtube.com/watch?v=mVYgtzDLZfY */
 .view-page-button div {
     display: flex;
     justify-content: center;
@@ -264,7 +268,7 @@ li a {
 
 /*-------------------------------- Teams */
 
-
+/* Here I used 100vw to ensure the team hero image filled the entire view port width accross all screen sizes */
 .team-hero-image img {
     width: 100vw;
 }
@@ -275,6 +279,7 @@ li a {
     align-items: center;
 }
 
+/* To add the shadow to my images I found this on stack overflow https://stackoverflow.com/questions/14084542/htmlcss-how-to-add-shadow-as-image-to-image */
 .players-section img {
     width: 120px;
     margin-bottom: 10px;
@@ -290,6 +295,7 @@ li a {
     margin-bottom: 1rem;
 }
 
+/* Here I used a media query to make the players images get smaller on tablet and mobile devices to improve responsive desgin */
 @media (min-width: 768px) {
     .players-section img {
         width: 200px;
@@ -297,6 +303,7 @@ li a {
     }
 }
 
+/* Here I used a media query to make the players names get smaller on tablet and mobile devices to improve responsive desgin */
 @media (max-width: 576px) {
     .players-section h3 {
         font-size: 14px;
@@ -306,6 +313,7 @@ li a {
 
 /*-------------------------------- Footer */
 
+/* I used 100vh for the footer section so that it fills the whole screen on all devices to improve design */
 .bayern-footer {
     min-height: 100vh;
     background-color: #c92b2b;
@@ -321,21 +329,7 @@ li a {
     height: 50px;
 }
 
-
-
-@media screen and (max-width: 576px) {
-    .bayern-footer-sponsors img {
-    height: 30px;
- 
-}
-}
-
-@media screen and (max-width: 768px) {
-    .bayern-footer-sponsors img {
-    height: 30px;
-}
-}
-
+/* Here I used a media query to make the sponsor logos get smaller on tablet and mobile devices to improve responsive desgin */
 @media screen and (max-width: 992px) {
     .bayern-footer-sponsors img {
     height: 30px;
@@ -381,6 +375,7 @@ li a {
     border: 2px solid #ffffff;
 }
 
+/* I watched a you tube tutorial on how to use the display flex function to center content https://www.youtube.com/watch?v=mVYgtzDLZfY */
 .top-nav-button div {
     display: flex;
     justify-content: center;
