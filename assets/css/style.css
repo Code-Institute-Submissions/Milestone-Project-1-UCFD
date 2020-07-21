@@ -315,7 +315,7 @@ li a {
 
 /* I used 100vh for the footer section so that it fills the whole screen on all devices to improve design */
 .bayern-footer {
-    min-height: 100vh;
+    min-height: 50vh;
     background-color: #c92b2b;
 }
 
