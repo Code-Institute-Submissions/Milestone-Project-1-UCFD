@@ -115,6 +115,10 @@ li a {
     margin-bottom: 1rem;
 }
 
+.shop-section a {
+    color: #505050;
+}
+
 @media (min-width: 768px) {
     .shop-section img {
         width: 70vw;
