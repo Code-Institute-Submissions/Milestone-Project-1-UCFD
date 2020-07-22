@@ -1,1138 +1,1113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-    <link rel="stylesheet" href="assets//css/style.css">
-    <title>FC Bayern World</title>
-</head>
-<body>
-    <!--For my navigation menu I used a bootstrap navbar which collapses into a dropdown menu on smaller screen sizes-->
-    <div class="container-fluid navbar-wrapper sticky-top">
-        <nav class="navbar navbar-expand-md navbar-dark">
-        <a class="navbar-brand" href="index.html"><img src="assets//images/teams/bayern-munchen.png" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Matches</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="fixtures.html">Fixtures <span class="sr-only">(current)</span></a>
-                <a class="dropdown-item" href="results.html">Results</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+        <link rel="stylesheet" href="assets//css/style.css">
+        <title>FC Bayern World</title>
+    </head>
+    <body>
+        <!--For my navigation menu I used a bootstrap navbar which collapses into a dropdown menu on smaller screen sizes-->
+        <div class="container-fluid navbar-wrapper sticky-top">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <a class="navbar-brand" href="index.html"><img src="assets//images/teams/bayern-munchen.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Matches</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="fixtures.html">Fixtures <span class="sr-only">(current)</span></a>
+                                <a class="dropdown-item" href="results.html">Results</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">Team</a>
+                        </li>
+                    </ul>
+                    <a href="index.html" id="nav-link-login" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-user"></i>  Log in</a>
+                    <!--For the log in button I used a bootstrap modal and added a bootstrap form within the body of the modal to allow users to submit their details--> 
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!--Had some trouble getting the validation for my form to work so seeked advice from tutor support 
+                                    and kevin advised me to move my buttons within the form tags as they were just in the modal and he 
+                                    gave me the action link-->
+                                    <form action="https://formdump.codeinstitute.net/" method="POST">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" required>
+                                        </div>
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Remember password</label>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-danger">Log in</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
-            </li>
-        </ul>
-        <a href="index.html" id="nav-link-login" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-user"></i>  Log in</a>
-<!--For the log in button I used a bootstrap modal and added a bootstrap form within the body of the modal to allow users to submit their details--> 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-<!--Had some trouble getting the validation for my form to work so seeked advice from tutor support and kevin advised me to move my buttons within the form tags as they were just in the modal and he gave me the action link-->
-<form action="https://formdump.codeinstitute.net/" method="POST">
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" required>
-    
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" required>
-  </div>
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Remember password</label>
-  </div>
-  <div class="modal-footer">
-               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-               <button type="submit" class="btn btn-danger">Log in</button>
-            </div>
-</form>
-      </div>
-          </div>
+            </nav>
         </div>
-      </div>
-    </div>
-   </nav>
-</div>
-    <div class="container">
-        <div class="row bayern-heading">
-            <div class="col-12">
-                <h2>Fixtures | 2020</h2>
+        <div class="container">
+            <div class="row bayern-heading">
+                <div class="col-12">
+                    <h2>Fixtures | 2020</h2>
+                </div>
             </div>
         </div>
-    </div>
-    <!--I added the months into my fixtures table to improve the user experience-->
-    <div class="container fixtures-wrapper">
-        <div class="row fixtures-month" id="january">
-            <div class="col-12">
-                 <h3>January</h3>
+        <!--I added the months into my fixtures table to improve the user experience-->
+        <div class="container fixtures-wrapper">
+            <div class="row fixtures-month" id="january">
+                <div class="col-12">
+                    <h3>January</h3>
+                </div>
             </div>
-        </div>
-        <!--I added a navagation bar using bootstrap to enable to the user to be able to easily navigate between the months-->
-        <!--I didn't add the month of april to the navagation bar as there were no games in april-->
-        <div class="row justify-content-end fixtures-month-nav">
-            <div class="col-12">
-                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                    <div class="btn-group mr-2" role="group" aria-label="First group">
-                    <a href="#january" class="btn btn-danger">Jan</a>
-                    <a href="#february" class="btn btn-danger">Feb</a>
-                    <a href="#march" class="btn btn-danger">Mar</a>
-                    <a href="#may" class="btn btn-danger">May</a>
-                    <a href="#june" class="btn btn-danger">Jun</a>
-                    <a href="#july" class="btn btn-danger">Jul</a>
+            <!--I added a navagation bar using bootstrap to enable to the user to be able to easily navigate between the months-->
+            <!--I didn't add the month of april to the navagation bar as there were no games in april-->
+            <div class="row justify-content-end fixtures-month-nav">
+                <div class="col-12">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group mr-2" role="group" aria-label="First group">
+                            <a href="#january" class="btn btn-danger">Jan</a>
+                            <a href="#february" class="btn btn-danger">Feb</a>
+                            <a href="#march" class="btn btn-danger">Mar</a>
+                            <a href="#may" class="btn btn-danger">May</a>
+                            <a href="#june" class="btn btn-danger">Jun</a>
+                            <a href="#july" class="btn btn-danger">Jul</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    <hr>
-        <!--To create my fixtures table I used the bootstrap grid system which responds accross all screen sizes-->
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>Bundesliga</h3>
+            <hr>
+            <!--To create my fixtures table I used the bootstrap grid system which responds accross all screen sizes-->
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>Bundesliga</h3>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>Allianz Arena | 11 January 2020, 14:30pm</h3>
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>Allianz Arena | 11 January 2020, 14:30pm</h3>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>FC Nürnberg</h3>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>FC Nürnberg</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/nurnberg.png" alt="FC Nürnberg logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="FC Bayern München logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>FC Bayern München</h3>
+                </div>
             </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/nurnberg.png" alt="FC Nürnberg logo">
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+                </div>
+                <!--In the fixtures tables I added a ticket button which links to the ticket shop on the Bayern Munchen website-->
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
             </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>Bundesliga</h3>
+                </div>
             </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="FC Bayern München logo">
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>Olympiastadion Berlin | 19 January 2020, 14:30pm</h3>
+                </div>
             </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>FC Bayern München</h3>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>Hertha BSC Berlin</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/hertha.png" alt="Hertha BSC Berlin logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>FC Bayern München</h3>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
             </div>
-            <!--In the fixtures tables I added a ticket button which links to the ticket shop on the Bayern Munchen website-->
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>Bundesliga</h3>
+                </div>
             </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>Bundesliga</h3>
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>Allianz Arena | 25 January 2020, 17:30pm</h3>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>Olympiastadion Berlin | 19 January 2020, 14:30pm</h3>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>FC Bayern München</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/schalke.png" alt="FC Schalke 04 logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>FC Schalke 04</h3>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>Hertha BSC Berlin</h3>
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
             </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/hertha.png" alt="Hertha BSC Berlin logo">
+            <hr>
+            <div class="row fixtures-month" id="february">
+                <div class="col-12">
+                    <h3>February</h3>
+                </div>
             </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
-            </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>FC Bayern München</h3>
-            </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
-            </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
-            </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>Bundesliga</h3>
-            </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>Allianz Arena | 25 January 2020, 17:30pm</h3>
-            </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>FC Bayern München</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
-            </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/schalke.png" alt="FC Schalke 04 logo">
-            </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>FC Schalke 04</h3>
-            </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
-            </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
-            </div>
-        </div>
-    <hr>
-        <div class="row fixtures-month" id="february">
-            <div class="col-12">
-                 <h3>February</h3>
-            </div>
-        </div>
-        <div class="row justify-content-end fixtures-month-nav">
-            <div class="col-12">
-                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                    <div class="btn-group mr-2" role="group" aria-label="First group">
-                    <a href="#january" class="btn btn-danger">Jan</a>
-                    <a href="#february" class="btn btn-danger">Feb</a>
-                    <a href="#march" class="btn btn-danger">Mar</a>
-                    <a href="#may" class="btn btn-danger">May</a>
-                    <a href="#june" class="btn btn-danger">Jun</a>
-                    <a href="#july" class="btn btn-danger">Jul</a>
+            <div class="row justify-content-end fixtures-month-nav">
+                <div class="col-12">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group mr-2" role="group" aria-label="First group">
+                            <a href="#january" class="btn btn-danger">Jan</a>
+                            <a href="#february" class="btn btn-danger">Feb</a>
+                            <a href="#march" class="btn btn-danger">Mar</a>
+                            <a href="#may" class="btn btn-danger">May</a>
+                            <a href="#june" class="btn btn-danger">Jun</a>
+                            <a href="#july" class="btn btn-danger">Jul</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>Bundesliga</h3>
-            </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>Opel Arena | 01 February 2020, 14:30pm</h3>
-            </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>FC Bayern München</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
-            </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/mainz.png" alt="FSV Mainz 05 logo">
-            </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>FSV Mainz 05</h3>
-            </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
-            </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
-            </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>DFB Cup</h3>
-            </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>Allianz Arena | 05 February 2020, 19:45pm</h3>
-            </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>FC Bayern München</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
-            </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/hoffenheim.png" alt="TSG 1899 Hoffenheim logo">
-            </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>TSG Hoffenheim</h3>
-            </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/dfb-cup.png" alt="DFB Cup logo">
-            </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
-            </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>Bundesliga</h3>
-            </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>Allianz Arena | 09 February 2020, 17:00pm</h3>
-            </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>FC Bayern München</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
-            </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/leipzig.png" alt="TSG 1899 Hoffenheim logo">
-            </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>RB Leipzig</h3>
-            </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
-            </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
-            </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>Bundesliga</h3>
-            </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>RheinEnergieSTADION | 16 February 2020, 14:30pm</h3>
-            </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>FC Köln</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/koln.png" alt="FC Köln logo">
-            </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
-            </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>FC Bayern München</h3>
-            </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
-            </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
-            </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>Bundesliga</h3>
-            </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>Allianz Arena | 21 February 2020, 19:30pm</h3>
-            </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>FC Bayern München</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
-            </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/paderborn.png" alt="SC Paderborn logo">
-            </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>SC Paderborn</h3>
-            </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
-            </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
-            </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>Champions League</h3>
-            </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>Stamford Bridge | 25 February 2020, 20:00pm</h3>
-            </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>Chelsea FC</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/chelsea.png" alt="Chelsea FC logo">
-            </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
-            </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>FC Bayern München</h3>
-            </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/champions-league.png" alt="Champions League logo">
-            </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
-            </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>Bundesliga</h3>
-            </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>Rhein Neckar Arena | 29 February 2020, 14:30pm</h3>
-            </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>TSG Hoffenheim</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/hoffenheim.png" alt="TSG 1899 Hoffenheim logo">
-            </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
-            </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>FC Bayern München</h3>
-            </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
-            </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
-            </div>
-        </div>
-    <hr>
-        <div class="row fixtures-month" id="march">
-            <div class="col-12">
-                 <h3>March</h3>
-            </div>
-        </div>
-        <div class="row justify-content-end fixtures-month-nav">
-            <div class="col-12">
-                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                    <div class="btn-group mr-2" role="group" aria-label="First group">
-                    <a href="#january" class="btn btn-danger">Jan</a>
-                    <a href="#february" class="btn btn-danger">Feb</a>
-                    <a href="#march" class="btn btn-danger">Mar</a>
-                    <a href="#may" class="btn btn-danger">May</a>
-                    <a href="#june" class="btn btn-danger">Jun</a>
-                    <a href="#july" class="btn btn-danger">Jul</a>
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>Bundesliga</h3>
+                </div>
+            </div>
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>Opel Arena | 01 February 2020, 14:30pm</h3>
+                </div>
+            </div>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>FC Bayern München</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/mainz.png" alt="FSV Mainz 05 logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>FSV Mainz 05</h3>
+                </div>
+            </div>
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
+            </div>
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>DFB Cup</h3>
+                </div>
+            </div>
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>Allianz Arena | 05 February 2020, 19:45pm</h3>
+                </div>
+            </div>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>FC Bayern München</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/hoffenheim.png" alt="TSG 1899 Hoffenheim logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>TSG Hoffenheim</h3>
+                </div>
+            </div>
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/dfb-cup.png" alt="DFB Cup logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
+            </div>
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>Bundesliga</h3>
+                </div>
+            </div>
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>Allianz Arena | 09 February 2020, 17:00pm</h3>
+                </div>
+            </div>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>FC Bayern München</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/leipzig.png" alt="TSG 1899 Hoffenheim logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>RB Leipzig</h3>
+                </div>
+            </div>
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
+            </div>
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>Bundesliga</h3>
+                </div>
+            </div>
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>RheinEnergieSTADION | 16 February 2020, 14:30pm</h3>
+                </div>
+            </div>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>FC Köln</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/koln.png" alt="FC Köln logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>FC Bayern München</h3>
+                </div>
+            </div>
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
+            </div>
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>Bundesliga</h3>
+                </div>
+            </div>
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>Allianz Arena | 21 February 2020, 19:30pm</h3>
+                </div>
+            </div>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>FC Bayern München</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/paderborn.png" alt="SC Paderborn logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>SC Paderborn</h3>
+                </div>
+            </div>
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
+            </div>
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>Champions League</h3>
+                </div>
+            </div>
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>Stamford Bridge | 25 February 2020, 20:00pm</h3>
+                </div>
+            </div>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>Chelsea FC</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/chelsea.png" alt="Chelsea FC logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>FC Bayern München</h3>
+                </div>
+            </div>
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/champions-league.png" alt="Champions League logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
+            </div>
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>Bundesliga</h3>
+                </div>
+            </div>
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>Rhein Neckar Arena | 29 February 2020, 14:30pm</h3>
+                </div>
+            </div>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>TSG Hoffenheim</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/hoffenheim.png" alt="TSG 1899 Hoffenheim logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>FC Bayern München</h3>
+                </div>
+            </div>
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
+            </div>
+            <hr>
+            <div class="row fixtures-month" id="march">
+                <div class="col-12">
+                    <h3>March</h3>
+                </div>
+            </div>
+            <div class="row justify-content-end fixtures-month-nav">
+                <div class="col-12">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group mr-2" role="group" aria-label="First group">
+                            <a href="#january" class="btn btn-danger">Jan</a>
+                            <a href="#february" class="btn btn-danger">Feb</a>
+                            <a href="#march" class="btn btn-danger">Mar</a>
+                            <a href="#may" class="btn btn-danger">May</a>
+                            <a href="#june" class="btn btn-danger">Jun</a>
+                            <a href="#july" class="btn btn-danger">Jul</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>DFB Cup, Quarter-finals</h3>
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>DFB Cup, Quarter-finals</h3>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>Veltins Arena | 03 March 2020, 19:45pm</h3>
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>Veltins Arena | 03 March 2020, 19:45pm</h3>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>FC Schalke 04</h3>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>FC Schalke 04</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/schalke.png" alt="FC Schalke 04 logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>FC Bayern München</h3>
+                </div>
             </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/schalke.png" alt="FC Schalke 04 logo">
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/dfb-cup.png" alt="DFB Cup logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
             </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>Bundesliga</h3>
+                </div>
             </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>Allianz Arena | 08 March 2020, 14:30pm</h3>
+                </div>
             </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>FC Bayern München</h3>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>FC Bayern München</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/augsburg.png" alt="FC Augsburg logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>FC Augsburg</h3>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/dfb-cup.png" alt="DFB Cup logo">
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
             </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+            <hr>
+            <div class="row fixtures-month" id="may">
+                <div class="col-12">
+                    <h3>May</h3>
+                </div>
             </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>Bundesliga</h3>
-            </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>Allianz Arena | 08 March 2020, 14:30pm</h3>
-            </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>FC Bayern München</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
-            </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/augsburg.png" alt="FC Augsburg logo">
-            </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>FC Augsburg</h3>
-            </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
-            </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
-            </div>
-        </div>
-    <hr>
-        <div class="row fixtures-month" id="may">
-            <div class="col-12">
-                 <h3>May</h3>
-            </div>
-        </div>
-        <div class="row justify-content-end fixtures-month-nav">
-            <div class="col-12">
-                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                    <div class="btn-group mr-2" role="group" aria-label="First group">
-                    <a href="#january" class="btn btn-danger">Jan</a>
-                    <a href="#february" class="btn btn-danger">Feb</a>
-                    <a href="#march" class="btn btn-danger">Mar</a>
-                    <a href="#may" class="btn btn-danger">May</a>
-                    <a href="#june" class="btn btn-danger">Jun</a>
-                    <a href="#july" class="btn btn-danger">Jul</a>
+            <div class="row justify-content-end fixtures-month-nav">
+                <div class="col-12">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group mr-2" role="group" aria-label="First group">
+                            <a href="#january" class="btn btn-danger">Jan</a>
+                            <a href="#february" class="btn btn-danger">Feb</a>
+                            <a href="#march" class="btn btn-danger">Mar</a>
+                            <a href="#may" class="btn btn-danger">May</a>
+                            <a href="#june" class="btn btn-danger">Jun</a>
+                            <a href="#july" class="btn btn-danger">Jul</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>Bundesliga</h3>
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>Bundesliga</h3>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>Olympiastadion Berlin | 17 May 2020, 17:00pm</h3>
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>Olympiastadion Berlin | 17 May 2020, 17:00pm</h3>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>Hertha BSC Berlin</h3>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>Hertha BSC Berlin</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/hertha.png" alt="Hertha BSC Berlin logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>FC Bayern München</h3>
+                </div>
             </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/hertha.png" alt="Hertha BSC Berlin logo">
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
             </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>Bundesliga</h3>
+                </div>
             </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>Allianz Arena | 23 May 2020, 17:30pm</h3>
+                </div>
             </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>FC Bayern München</h3>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>FC Bayern München</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/frankfurt.png" alt="Eintracht Frankfurt logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>Eintracht Frankfurt</h3>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
             </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>Bundesliga</h3>
+                </div>
             </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>Bundesliga</h3>
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>Signal Iduna Park | 26 May 2020, 17:30pm</h3>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>Allianz Arena | 23 May 2020, 17:30pm</h3>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>Borussia Dortmund</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/dortmund.png" alt="Borussia Dortmund logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>FC Bayern München</h3>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>FC Bayern München</h3>
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
             </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>Bundesliga</h3>
+                </div>
             </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>Allianz Arena | 30 May 2020, 17:30pm</h3>
+                </div>
             </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/frankfurt.png" alt="Eintracht Frankfurt logo">
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>FC Bayern München</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/dusseldorf.png" alt="Fortuna Düsseldorf logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>Fortuna Düsseldorf</h3>
+                </div>
             </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>Eintracht Frankfurt</h3>
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+            <hr>
+            <div class="row fixtures-month" id="june">
+                <div class="col-12">
+                    <h3>June</h3>
+                </div>
             </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
-            </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>Bundesliga</h3>
-            </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>Signal Iduna Park | 26 May 2020, 17:30pm</h3>
-            </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>Borussia Dortmund</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/dortmund.png" alt="Borussia Dortmund logo">
-            </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
-            </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>FC Bayern München</h3>
-            </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
-            </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
-            </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>Bundesliga</h3>
-            </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>Allianz Arena | 30 May 2020, 17:30pm</h3>
-            </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>FC Bayern München</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
-            </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/dusseldorf.png" alt="Fortuna Düsseldorf logo">
-            </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>Fortuna Düsseldorf</h3>
-            </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
-            </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
-            </div>
-        </div>
-    <hr>
-        <div class="row fixtures-month" id="june">
-            <div class="col-12">
-                 <h3>June</h3>
-            </div>
-        </div>
-        <div class="row justify-content-end fixtures-month-nav">
-            <div class="col-12">
-                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                    <div class="btn-group mr-2" role="group" aria-label="First group">
-                    <a href="#january" class="btn btn-danger">Jan</a>
-                    <a href="#february" class="btn btn-danger">Feb</a>
-                    <a href="#march" class="btn btn-danger">Mar</a>
-                    <a href="#may" class="btn btn-danger">May</a>
-                    <a href="#june" class="btn btn-danger">Jun</a>
-                    <a href="#july" class="btn btn-danger">Jul</a>
+            <div class="row justify-content-end fixtures-month-nav">
+                <div class="col-12">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group mr-2" role="group" aria-label="First group">
+                            <a href="#january" class="btn btn-danger">Jan</a>
+                            <a href="#february" class="btn btn-danger">Feb</a>
+                            <a href="#march" class="btn btn-danger">Mar</a>
+                            <a href="#may" class="btn btn-danger">May</a>
+                            <a href="#june" class="btn btn-danger">Jun</a>
+                            <a href="#july" class="btn btn-danger">Jul</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>Bundesliga</h3>
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>Bundesliga</h3>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>BayArena | 06 June 2020, 14:30pm</h3>
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>BayArena | 06 June 2020, 14:30pm</h3>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>Bayer 04 Leverkusen</h3>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>Bayer 04 Leverkusen</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/leverkusen.png" alt="Bayer 04 Leverkusen logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>FC Bayern München</h3>
+                </div>
             </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/leverkusen.png" alt="Bayer 04 Leverkusen logo">
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
             </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>DFB Cup, Semi-finals</h3>
+                </div>
             </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>Allianz Arena | 10 June 2020, 19:45pm</h3>
+                </div>
             </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>FC Bayern München</h3>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>FC Bayern München</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/frankfurt.png" alt="Eintracht Frankfurt logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>Eintracht Frankfurt</h3>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/dfb-cup.png" alt="DFB Cup logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
             </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>Bundesliga</h3>
+                </div>
             </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>DFB Cup, Semi-finals</h3>
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>Allianz Arena | 13 June 2020, 17:30pm</h3>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>Allianz Arena | 10 June 2020, 19:45pm</h3>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>FC Bayern München</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/gladbach.png" alt="Borussia Mönchengladbach logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>Borussia M'gladbach</h3>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>FC Bayern München</h3>
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
             </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>Bundesliga</h3>
+                </div>
             </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>Weser Stadium | 16 June 2020, 19:30pm</h3>
+                </div>
             </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/frankfurt.png" alt="Eintracht Frankfurt logo">
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>SV Werder Bremen</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/bremen.png" alt="SV Werder Bremen logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>FC Bayern München</h3>
+                </div>
             </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>Eintracht Frankfurt</h3>
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/dfb-cup.png" alt="DFB Cup logo">
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>Bundesliga</h3>
+                </div>
             </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>Allianz Arena | 20 June 2020, 14:30pm</h3>
+                </div>
             </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>Bundesliga</h3>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>FC Bayern München</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/freiburg.png" alt="SC Freiburg logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>SC Freiburg</h3>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>Allianz Arena | 13 June 2020, 17:30pm</h3>
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>FC Bayern München</h3>
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>Bundesliga</h3>
+                </div>
             </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>Volkswagen Arena | 27 June 2020, 14:30pm</h3>
+                </div>
             </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>VFL Wolfsburg</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/wolfsburg.png" alt="SV Werder Bremen logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>FC Bayern München</h3>
+                </div>
             </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/gladbach.png" alt="Borussia Mönchengladbach logo">
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
             </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>Borussia M'gladbach</h3>
+            <hr>
+            <div class="row fixtures-month" id="july">
+                <div class="col-12">
+                    <h3>July</h3>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
-            </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
-            </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>Bundesliga</h3>
-            </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>Weser Stadium | 16 June 2020, 19:30pm</h3>
-            </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>SV Werder Bremen</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/bremen.png" alt="SV Werder Bremen logo">
-            </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
-            </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>FC Bayern München</h3>
-            </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
-            </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
-            </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>Bundesliga</h3>
-            </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>Allianz Arena | 20 June 2020, 14:30pm</h3>
-            </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>FC Bayern München</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
-            </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/freiburg.png" alt="SC Freiburg logo">
-            </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>SC Freiburg</h3>
-            </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
-            </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
-            </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>Bundesliga</h3>
-            </div>
-        </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>Volkswagen Arena | 27 June 2020, 14:30pm</h3>
-            </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>VFL Wolfsburg</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/wolfsburg.png" alt="SV Werder Bremen logo">
-            </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
-            </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>FC Bayern München</h3>
-            </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
-            </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
-            </div>
-        </div>
-    <hr>
-        <div class="row fixtures-month" id="july">
-            <div class="col-12">
-                 <h3>July</h3>
-            </div>
-        </div>
-        <div class="row justify-content-end fixtures-month-nav">
-            <div class="col-12">
-                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                    <div class="btn-group mr-2" role="group" aria-label="First group">
-                    <a href="#january" class="btn btn-danger">Jan</a>
-                    <a href="#february" class="btn btn-danger">Feb</a>
-                    <a href="#march" class="btn btn-danger">Mar</a>
-                    <a href="#may" class="btn btn-danger">May</a>
-                    <a href="#june" class="btn btn-danger">Jun</a>
-                    <a href="#july" class="btn btn-danger">Jul</a>
+            <div class="row justify-content-end fixtures-month-nav">
+                <div class="col-12">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group mr-2" role="group" aria-label="First group">
+                            <a href="#january" class="btn btn-danger">Jan</a>
+                            <a href="#february" class="btn btn-danger">Feb</a>
+                            <a href="#march" class="btn btn-danger">Mar</a>
+                            <a href="#may" class="btn btn-danger">May</a>
+                            <a href="#june" class="btn btn-danger">Jun</a>
+                            <a href="#july" class="btn btn-danger">Jul</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    <hr>
-        <div class="row fixture-league-name justify-content-start">
-            <div class="col-12">
-                <h3>DFB Cup, Final</h3>
+            <hr>
+            <div class="row fixture-league-name justify-content-start">
+                <div class="col-12">
+                    <h3>DFB Cup, Final</h3>
+                </div>
+            </div>
+            <div class="row fixtures-stadium-date justify-content-start">
+                <div class="col-12">
+                    <h3>BayArena | 04 July 2020, 19:00pm</h3>
+                </div>
+            </div>
+            <div class="row fixtures-content justify-content-start">
+                <div class="col-3 col-md-4 my-auto fixtures-home-team">
+                    <h3>Bayer 04 Leverkusen</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-home-logo">
+                    <img src="assets//images/teams/leverkusen.png" alt="Bayer 04 Leverkusen logo">
+                </div>
+                <div class="col-2 my-auto fixtures-kick-off">
+                    <h3>VS</h3>
+                </div>
+                <div class="col-2 col-md-1 my-auto fixtures-away-logo">
+                    <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
+                </div>
+                <div class="col-3 col-md-4 my-auto fixtures-away-team">
+                    <h3>FC Bayern München</h3>
+                </div>
+            </div>
+            <div class="row fixtures-banner justify-content-between">
+                <div class="col-2 fixtures-banner-content">
+                    <img src="assets//images/leagues/dfb-cup.png" alt="Bundesliga logo">
+                </div>
+                <div class="col-3 fixtures-banner-content">
+                    <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
+                </div>
             </div>
         </div>
-        <div class="row fixtures-stadium-date justify-content-start">
-            <div class="col-12">
-                <h3>BayArena | 04 July 2020, 19:00pm</h3>
+        <!--To build my footer section I used the bootstrap grid system which responds fully accross all screen sizes-->
+        <footer class="bayern-footer">
+            <div class="container">
+                <!--I used the bootstrap justify-content-center class to center all content-->
+                <!--in this section i added some of the sponsors of Bayern Munchen and have provided a link to their websites-->
+                <div class="row justify-content-center bayern-footer-sponsors">
+                    <div class="col-4 col-md-3">
+                        <a href="https://www.adidas.co.uk/men?cm_mmc=AdieSEM_Google-_-adidas-Brand-B-Exact-_-Brand-adidas-Men-_-adidas&cm_mmca1=UK&cm_mmca2=e&ds_kid=43700019176333921&gclid=EAIaIQobChMI5o6A0PS16gIVme3tCh2ehQgkEAAYASAAEgLG7fD_BwE&gclsrc=aw.ds" target="_blank">
+                        <img src="assets//images/sponsors/adidas.png" alt="Adidas logo">
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-3">
+                        <a href="https://www.audi.co.uk/finance-and-offers/three-months-on-us.html?sc_ppc=p1111531431&gclid=EAIaIQobChMIo4GuvvW16gIVhLHtCh0OsQDyEAAYASAAEgK3vfD_BwE" target="_blank">
+                        <img src="assets//images/sponsors/audi.png" alt="Audi logo">
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-3">
+                        <a href="https://www.qatarairways.com/en-gb/homepage.html?gclid=EAIaIQobChMI1OD2n_a16gIVze3tCh01wg6jEAAYASAAEgI2DvD_BwE&s_kwcid=AL!3739!3!408025099429!e!!g!!qatar%20airways&ef_id=EAIaIQobChMI1OD2n_a16gIVze3tCh01wg6jEAAYASAAEgI2DvD_BwE:G:s" target="_blank">
+                        <img src="assets//images/sponsors/qatar.png" alt="Qatar Airways logo">
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-3">
+                        <a href="https://www.t-mobile.com/" target="_blank">
+                        <img src="assets//images/sponsors/t-mobile.png" alt="T-Mobile logo">
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-3">
+                        <a href="https://www.allianz.com/en.html" target="_blank">
+                        <img src="assets//images/sponsors/allianz.png" alt="Allianz logo">
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-3">
+                        <a href="https://www.dhl.com/en.html" target="_blank">
+                        <img src="assets//images/sponsors/dhl.png" alt="DHL logo">
+                        </a>
+                    </div>
+                </div>
+                <!--In this section I added anchor links to Bayern Munchens social media pages-->
+                <div class="row justify-content-center footer-social-media">
+                    <div class="col-2 col-md-1">
+                        <a href="https://www.facebook.com/fcbayern.en/" target="_blank">
+                            <!--For the icons I used font awesome-->
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <span class="sr-only">Facebook</span>
+                    </div>
+                    <div class="col-2 col-md-1">
+                        <a href="https://www.instagram.com/fcbayern/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                        <span class="sr-only">Instagram</span>
+                    </div>
+                    <div class="col-2 col-md-1">
+                        <a href="https://www.youtube.com/user/fcbayern" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                        </a>
+                        <span class="sr-only">You tube</span>
+                    </div>
+                    <div class="col-2 col-md-1">
+                        <a href="https://twitter.com/fcbayernen" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <span class="sr-only">Twitter</span>
+                    </div>
+                </div>
+                <!--Here I added a button to take the user back to the top of the page to improve navigation-->
+                <div class="row top-nav-button justify-content-center">
+                    <div class="col-6 col-lg-2">
+                        <a href="#" class="btn">Back to top</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row fixtures-content justify-content-start">
-            <div class="col-3 col-md-4 my-auto fixtures-home-team">
-                <h3>Bayer 04 Leverkusen</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-home-logo">
-                <img src="assets//images/teams/leverkusen.png" alt="Bayer 04 Leverkusen logo">
-            </div>
-            <div class="col-2 my-auto fixtures-kick-off">
-                <h3>VS</h3>
-            </div>
-            <div class="col-2 col-md-1 my-auto fixtures-away-logo">
-                <img src="assets//images/teams/bayern-munchen.png" alt="Bayern München logo">
-            </div>
-            <div class="col-3 col-md-4 my-auto fixtures-away-team">
-                <h3>FC Bayern München</h3>
-            </div>
-        </div>
-        <div class="row fixtures-banner justify-content-between">
-            <div class="col-2 fixtures-banner-content">
-                <img src="assets//images/leagues/dfb-cup.png" alt="Bundesliga logo">
-            </div>
-            <div class="col-3 fixtures-banner-content">
-                <a class="btn" href="https://fcbayern.com/en/tickets" target="_blank">Tickets</a>
-            </div>
-        </div>
-    </div>
-<!--To build my footer section I used the bootstrap grid system which responds fully accross all screen sizes-->
-<footer class="bayern-footer">
-    <div class="container">
-       <!--I used the bootstrap justify-content-center class to center all content-->
-        <!--in this section i added some of the sponsors of Bayern Munchen and have provided a link to their websites-->
-       <div class="row justify-content-center bayern-footer-sponsors">
-           <div class="col-4 col-md-3">
-              <a href="https://www.adidas.co.uk/men?cm_mmc=AdieSEM_Google-_-adidas-Brand-B-Exact-_-Brand-adidas-Men-_-adidas&cm_mmca1=UK&cm_mmca2=e&ds_kid=43700019176333921&gclid=EAIaIQobChMI5o6A0PS16gIVme3tCh2ehQgkEAAYASAAEgLG7fD_BwE&gclsrc=aw.ds" target="_blank">
-              <img src="assets//images/sponsors/adidas.png" alt="Adidas logo">
-              </a>
-           </div>
-           <div class="col-4 col-md-3">
-              <a href="https://www.audi.co.uk/finance-and-offers/three-months-on-us.html?sc_ppc=p1111531431&gclid=EAIaIQobChMIo4GuvvW16gIVhLHtCh0OsQDyEAAYASAAEgK3vfD_BwE" target="_blank">
-              <img src="assets//images/sponsors/audi.png" alt="Audi logo">
-              </a>
-           </div>
-           <div class="col-4 col-md-3">
-              <a href="https://www.qatarairways.com/en-gb/homepage.html?gclid=EAIaIQobChMI1OD2n_a16gIVze3tCh01wg6jEAAYASAAEgI2DvD_BwE&s_kwcid=AL!3739!3!408025099429!e!!g!!qatar%20airways&ef_id=EAIaIQobChMI1OD2n_a16gIVze3tCh01wg6jEAAYASAAEgI2DvD_BwE:G:s" target="_blank">
-              <img src="assets//images/sponsors/qatar.png" alt="Qatar Airways logo">
-              </a>
-           </div>
-           <div class="col-4 col-md-3">
-              <a href="https://www.t-mobile.com/" target="_blank">
-              <img src="assets//images/sponsors/t-mobile.png" alt="T-Mobile logo">
-              </a>
-           </div>
-           <div class="col-4 col-md-3">
-              <a href="https://www.allianz.com/en.html" target="_blank">
-              <img src="assets//images/sponsors/allianz.png" alt="Allianz logo">
-              </a>
-           </div>
-           <div class="col-4 col-md-3">
-              <a href="https://www.dhl.com/en.html" target="_blank">
-              <img src="assets//images/sponsors/dhl.png" alt="DHL logo">
-              </a>
-           </div>
-        </div>
-        <!--In this section I added anchor links to Bayern Munchens social media pages-->
-        <div class="row justify-content-center footer-social-media">
-            <div class="col-2 col-md-1">
-                <a href="https://www.facebook.com/fcbayern.en/" target="_blank">
-                <!--For the icons I used font awesome-->
-                <i class="fab fa-facebook-f"></i>
-                </a>
-                <span class="sr-only">Facebook</span>
-            </div>
-            <div class="col-2 col-md-1">
-                <a href="https://www.instagram.com/fcbayern/" target="_blank">
-                <i class="fab fa-instagram"></i>
-                </a>
-                <span class="sr-only">Instagram</span>
-            </div>
-            <div class="col-2 col-md-1">
-                <a href="https://www.youtube.com/user/fcbayern" target="_blank">
-                <i class="fab fa-youtube"></i>
-                </a>
-                <span class="sr-only">You tube</span>
-            </div>
-            <div class="col-2 col-md-1">
-                <a href="https://twitter.com/fcbayernen" target="_blank">
-                <i class="fab fa-twitter"></i>
-                </a>
-                <span class="sr-only">Twitter</span>
-            </div>
-        </div>
-        <!--Here I added a button to take the user back to the top of the page to improve navigation-->
-        <div class="row top-nav-button justify-content-center">
-            <div class="col-6 col-lg-2">
-                 <a href="#" class="btn">Back to top</a>
-            </div>
-        </div>
-    </div>
-</footer>  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</body>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
 </html>

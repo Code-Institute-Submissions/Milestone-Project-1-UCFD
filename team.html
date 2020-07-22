@@ -1,396 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-    <link rel="stylesheet" href="assets//css/style.css">
-    <title>FC Bayern World</title>
-</head>
-<body>
-    <!--For my navigation menu I used a bootstrap navbar which collapses into a dropdown menu on smaller screen sizes-->
-    <div class="container-fluid navbar-wrapper sticky-top">
-        <nav class="navbar navbar-expand-md navbar-dark">
-        <a class="navbar-brand" href="index.html"><img src="assets//images/teams/bayern-munchen.png" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Matches</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="fixtures.html">Fixtures</a>
-                <a class="dropdown-item" href="results.html">Results</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+        <link rel="stylesheet" href="assets//css/style.css">
+        <title>FC Bayern World</title>
+    </head>
+    <body>
+        <!--For my navigation menu I used a bootstrap navbar which collapses into a dropdown menu on smaller screen sizes-->
+        <div class="container-fluid navbar-wrapper sticky-top">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <a class="navbar-brand" href="index.html"><img src="assets//images/teams/bayern-munchen.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Matches</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="fixtures.html">Fixtures</a>
+                                <a class="dropdown-item" href="results.html">Results</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="team.html">Team <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <a href="index.html" id="nav-link-login" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-user"></i>  Log in</a>
+                    <!--For the log in button I used a bootstrap modal and added a bootstrap form within the body of the modal to allow users to submit their details-->        
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <!--Had some trouble getting the validation for my form to work so seeked advice from tutor support and kevin advised 
+                                    me to move my buttons within the form tags as they were just in the modal and he gave me the action link-->
+                                    <form action="https://formdump.codeinstitute.net/" method="POST">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" required>
+                                        </div>
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Remember password</label>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-danger">Log in</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="team.html">Team <span class="sr-only">(current)</span></a>
-            </li>
-        </ul>
-        <a href="index.html" id="nav-link-login" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-user"></i>  Log in</a>
-<!--For the log in button I used a bootstrap modal and added a bootstrap form within the body of the modal to allow users to submit their details-->        
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-<!--Had some trouble getting the validation for my form to work so seeked advice from tutor support and kevin advised me to move my buttons within the form tags as they were just in the modal and he gave me the action link-->
-<form action="https://formdump.codeinstitute.net/" method="POST">
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" required>
-    
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" required>
-  </div>
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Remember password</label>
-  </div>
-<div class="modal-footer">
-               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-               <button type="submit" class="btn btn-danger">Log in</button>
-            </div>
-</form>
-      </div>
-          </div>
+            </nav>
         </div>
-      </div>
-    </div>
-   </nav>
-</div>
-
-<!--Got the idea to use the p-0 class on this container from stack overflow-->
-<div class="container-fluid p-0 team-hero-image">
-    <div class="row no-gutters">
-        <div class="col-12 no-gutters">
-    <img src="assets//images/team/first-team.png" alt="First team">
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row bayern-heading">
-        <div class="col-12">
-            <h3>GOALKEEPERS</h3>
-        </div>
-    </div>
-    <hr>
-</div>
-
-<div class="container">
-    <!--I created the players section using the bootstrap grid system which responds fully accross all screen size-->
-    <div class="row players-section">
-        <div class="col-6 col-md-4 col-lg-3">
-            <!--For each player I added a link to their page on the Bayern munchen website-->
-            <a href="https://fcbayern.com/en/teams/professionals/manuel-neuer" target="_blank">
-            <!--All png images of the players were taken from the bayern munchen website and I created the grey background of the images using Adobe photoshop-->
-            <img src="assets//images/team/manuel-neuer.png" alt="Manuel Neuer">
-            <h3>Manuel Neuer</h3>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/sven-ulreich" target="_blank">
-            <img src="assets//images/team/sven_ulreich.png" alt="Sven Ulreich">
-            <h3>Sven Ulreich</h3>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/christian-fruchtl" target="_blank">
-            <img src="assets//images/team/christian_fruechtl.png" alt="Christian Früchtl">
-            <h3>Christian Früchtl</h3>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/ron-thorben-hoffmann" target="_blank">
-            <img src="assets//images/team/ron-thorben_hoffmann.png" alt="Ron-Thorben Hoffmann">
-            <h3>Ron Hoffmann</h3>
-            </a>
-        </div>
-    </div>
-</div> 
-
-<div class="container">
-    <div class="row bayern-heading">
-        <div class="col-12">
-            <h3>DEFENDERS</h3>
-        </div>
-    </div>
-    <hr>
-</div>
-
-<div class="container">
-    <div class="row players-section">
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/niklas-sule" target="_blank">
-            <img src="assets//images/team/niklas_suele.png" alt="Niklas Süle">
-            <h3>Niklas Süle</h3>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/benjamin-pavard" target="_blank">
-            <img src="assets//images/team/benjamin_pavard.png" alt="Benjamin Pavard">
-            <h3>Benjamin Pavard</h3>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/jerome-boateng" target="_blank">
-            <img src="assets//images/team/jerome_boateng.png" alt="Jérôme Boateng">
-            <h3>Jérôme Boateng</h3>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/lucas-hernandez" target="_blank">
-            <img src="assets//images/team/lucas_hernandez.png" alt="Lucas Hernàndez">
-            <h3>Lucas Hernàndez</h3>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/david-alaba" target="_blank">
-            <img src="assets//images/team/david_alaba.png" alt="David Alaba">
-            <h3>David Alaba</h3>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/joshua-kimmich" target="_blank">
-            <img src="assets//images/team/joshua_kimmich.png" alt="Joshua Kimmich">
-            <h3>Joshua Kimmich</h3>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/lars-lukas-mai" target="_blank">
-            <img src="assets//images/team/lukas_mai.png" alt="Lars Lukas Mai">
-            <h3>Lars Lukas Mai</h3>
-            </a>
-        </div>
-    </div>
-</div> 
-
-<div class="container">
-    <div class="row bayern-heading">
-        <div class="col-12">
-            <h3>MIDFIELDERS</h3>
-        </div>
-    </div>
-    <hr>
-</div>
-
-<div class="container">
-    <div class="row players-section">
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/thiago" target="_blank">
-            <img src="assets//images/team/thiago.png" alt="Thiago">
-            <h3>Thiago</h3>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/javi-martinez" target="_blank">
-            <img src="assets//images/team/javi_martinez.png" alt="Javi Martinez">
-            <h3>Javi Martinez</h3>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/philippe-coutinho" target="_blank">
-            <img src="assets//images/team/philippe_coutinho.png" alt="Philippe Coutinho">
-            <h3>Philippe Coutinho</h3>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/michael-cuisance" target="_blank">
-            <img src="assets//images/team/michael_cuisance.png" alt="Michaël Cuisance">
-            <h3>Michaël Cuisance</h3>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/leon-goretzka" target="_blank">
-            <img src="assets//images/team/leon_goretzka.png" alt="Leon Goretzka">
-            <h3>Leon Goretzka</h3>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/alphonso-davies" target="_blank">
-            <img src="assets//images/team/alphonso_davies.png" alt="Alphonso Davies">
-            <h3>Alphonso Davies</h3>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/corentin-tolisso" target="_blank">
-            <img src="assets//images/team/corentin_tolisso.png" alt="Corentin Tolisso">
-            <h3>Corentin Tolisso</h3>
-            </a>
-        </div>
-    </div>
-</div> 
-
-<div class="container">
-    <div class="row bayern-heading">
-        <div class="col-12">
-            <h3>FORWARDS</h3>
-        </div>
-    </div>
-    <hr>
-</div>
-
-<div class="container">
-    <div class="row players-section">
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/serge-gnabry" target="_blank">
-            <img src="assets//images/team/serge-gnabry.png" alt="Serge Gnabry">
-            <h3>Serge Gnabry</h3>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/fiete-arp" target="_blank">
-            <img src="assets//images/team/fiete_arp.png" alt="Fiete Arp">
-            <h3>Fiete Arp</h3>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/ivan-perisic" target="_blank">
-            <img src="assets//images/team/ivan_perisic.png" alt="Ivan Perišić">
-            <h3>Ivan Perišić</h3>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/thomas-mueller" target="_blank">
-            <img src="assets//images/team/thomas_mueller.png" alt="Thomas Müller">
-            <h3>Thomas Müller</h3>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/kingsley-coman" target="_blank">
-            <img src="assets//images/team/kingsley_coman.png" alt="Kingsley Coman">
-            <h3>Kingsley Coman</h3>
-            </a>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="https://fcbayern.com/en/teams/professionals/robert-lewandowski" target="_blank">
-            <img src="assets//images/team/robert_lewandowski.png" alt="Robert Lewandowski">
-            <h3>Robert <br> Lewandowski</h3>
-            </a>
-        </div>
-        
-    </div>
-</div> 
-<!--To build my footer section I used the bootstrap grid system which responds fully accross all screen sizes-->
-<footer class="bayern-footer">
-    <div class="container">
-        <!--I used the bootstrap justify-content-center class to center all content-->
-        <!--in this section i added some of the sponsors of Bayern Munchen and have provided a link to their websites-->
-       <div class="row justify-content-center bayern-footer-sponsors">
-           <div class="col-4 col-md-3">
-              <a href="https://www.adidas.co.uk/men?cm_mmc=AdieSEM_Google-_-adidas-Brand-B-Exact-_-Brand-adidas-Men-_-adidas&cm_mmca1=UK&cm_mmca2=e&ds_kid=43700019176333921&gclid=EAIaIQobChMI5o6A0PS16gIVme3tCh2ehQgkEAAYASAAEgLG7fD_BwE&gclsrc=aw.ds" target="_blank">
-              <img src="assets//images/sponsors/adidas.png" alt="Adidas logo">
-              </a>
-           </div>
-           <div class="col-4 col-md-3">
-              <a href="https://www.audi.co.uk/finance-and-offers/three-months-on-us.html?sc_ppc=p1111531431&gclid=EAIaIQobChMIo4GuvvW16gIVhLHtCh0OsQDyEAAYASAAEgK3vfD_BwE" target="_blank">
-              <img src="assets//images/sponsors/audi.png" alt="Audi logo">
-              </a>
-           </div>
-           <div class="col-4 col-md-3">
-              <a href="https://www.qatarairways.com/en-gb/homepage.html?gclid=EAIaIQobChMI1OD2n_a16gIVze3tCh01wg6jEAAYASAAEgI2DvD_BwE&s_kwcid=AL!3739!3!408025099429!e!!g!!qatar%20airways&ef_id=EAIaIQobChMI1OD2n_a16gIVze3tCh01wg6jEAAYASAAEgI2DvD_BwE:G:s" target="_blank">
-              <img src="assets//images/sponsors/qatar.png" alt="Qatar Airways logo">
-              </a>
-           </div>
-           <div class="col-4 col-md-3">
-              <a href="https://www.t-mobile.com/" target="_blank">
-              <img src="assets//images/sponsors/t-mobile.png" alt="T-Mobile logo">
-              </a>
-           </div>
-           <div class="col-4 col-md-3">
-              <a href="https://www.allianz.com/en.html" target="_blank">
-              <img src="assets//images/sponsors/allianz.png" alt="Allianz logo">
-              </a>
-           </div>
-           <div class="col-4 col-md-3">
-              <a href="https://www.dhl.com/en.html" target="_blank">
-              <img src="assets//images/sponsors/dhl.png" alt="DHL logo">
-              </a>
-           </div>
-        </div>
-        <!--In this section I added anchor links to Bayern Munchens social media pages-->
-        <div class="row justify-content-center footer-social-media">
-            <div class="col-2 col-md-1">
-                <a href="https://www.facebook.com/fcbayern.en/" target="_blank">
-                <!--For the icons I used font awesome-->
-                <i class="fab fa-facebook-f"></i>
-                </a>
-                <span class="sr-only">Facebook</span>
-            </div>
-            <div class="col-2 col-md-1">
-                <a href="https://www.instagram.com/fcbayern/" target="_blank">
-                <i class="fab fa-instagram"></i>
-                </a>
-                <span class="sr-only">Instagram</span>
-            </div>
-            <div class="col-2 col-md-1">
-                <a href="https://www.youtube.com/user/fcbayern" target="_blank">
-                <i class="fab fa-youtube"></i>
-                </a>
-                <span class="sr-only">You tube</span>
-            </div>
-            <div class="col-2 col-md-1">
-                <a href="https://twitter.com/fcbayernen" target="_blank">
-                <i class="fab fa-twitter"></i>
-                </a>
-                <span class="sr-only">Twitter</span>
+        <!--Got the idea to use the p-0 class on this container from stack overflow-->
+        <div class="container-fluid p-0 team-hero-image">
+            <div class="row no-gutters">
+                <div class="col-12 no-gutters">
+                    <img src="assets//images/team/first-team.png" alt="First team">
+                </div>
             </div>
         </div>
-        <!--Here I added a button to take the user back to the top of the page to improve navigation-->
-        <div class="row top-nav-button justify-content-center">
-            <div class="col-6 col-lg-2">
-                 <a href="#" class="btn">Back to top</a>
+        <div class="container">
+            <div class="row bayern-heading">
+                <div class="col-12">
+                    <h3>GOALKEEPERS</h3>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <!--I created the players section using the bootstrap grid system which responds fully accross all screen size-->
+            <div class="row players-section">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <!--For each player I added a link to their page on the Bayern munchen website-->
+                    <a href="https://fcbayern.com/en/teams/professionals/manuel-neuer" target="_blank">
+                        <!--All png images of the players were taken from the bayern munchen website and I created the grey background of the images using Adobe photoshop-->
+                        <img src="assets//images/team/manuel-neuer.png" alt="Manuel Neuer">
+                        <h3>Manuel Neuer</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/sven-ulreich" target="_blank">
+                        <img src="assets//images/team/sven_ulreich.png" alt="Sven Ulreich">
+                        <h3>Sven Ulreich</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/christian-fruchtl" target="_blank">
+                        <img src="assets//images/team/christian_fruechtl.png" alt="Christian Früchtl">
+                        <h3>Christian Früchtl</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/ron-thorben-hoffmann" target="_blank">
+                        <img src="assets//images/team/ron-thorben_hoffmann.png" alt="Ron-Thorben Hoffmann">
+                        <h3>Ron Hoffmann</h3>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</footer> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</body>
+        <div class="container">
+            <div class="row bayern-heading">
+                <div class="col-12">
+                    <h3>DEFENDERS</h3>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row players-section">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/niklas-sule" target="_blank">
+                        <img src="assets//images/team/niklas_suele.png" alt="Niklas Süle">
+                        <h3>Niklas Süle</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/benjamin-pavard" target="_blank">
+                        <img src="assets//images/team/benjamin_pavard.png" alt="Benjamin Pavard">
+                        <h3>Benjamin Pavard</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/jerome-boateng" target="_blank">
+                        <img src="assets//images/team/jerome_boateng.png" alt="Jérôme Boateng">
+                        <h3>Jérôme Boateng</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/lucas-hernandez" target="_blank">
+                        <img src="assets//images/team/lucas_hernandez.png" alt="Lucas Hernàndez">
+                        <h3>Lucas Hernàndez</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/david-alaba" target="_blank">
+                        <img src="assets//images/team/david_alaba.png" alt="David Alaba">
+                        <h3>David Alaba</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/joshua-kimmich" target="_blank">
+                        <img src="assets//images/team/joshua_kimmich.png" alt="Joshua Kimmich">
+                        <h3>Joshua Kimmich</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/lars-lukas-mai" target="_blank">
+                        <img src="assets//images/team/lukas_mai.png" alt="Lars Lukas Mai">
+                        <h3>Lars Lukas Mai</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row bayern-heading">
+                <div class="col-12">
+                    <h3>MIDFIELDERS</h3>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row players-section">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/thiago" target="_blank">
+                        <img src="assets//images/team/thiago.png" alt="Thiago">
+                        <h3>Thiago</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/javi-martinez" target="_blank">
+                        <img src="assets//images/team/javi_martinez.png" alt="Javi Martinez">
+                        <h3>Javi Martinez</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/philippe-coutinho" target="_blank">
+                        <img src="assets//images/team/philippe_coutinho.png" alt="Philippe Coutinho">
+                        <h3>Philippe Coutinho</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/michael-cuisance" target="_blank">
+                        <img src="assets//images/team/michael_cuisance.png" alt="Michaël Cuisance">
+                        <h3>Michaël Cuisance</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/leon-goretzka" target="_blank">
+                        <img src="assets//images/team/leon_goretzka.png" alt="Leon Goretzka">
+                        <h3>Leon Goretzka</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/alphonso-davies" target="_blank">
+                        <img src="assets//images/team/alphonso_davies.png" alt="Alphonso Davies">
+                        <h3>Alphonso Davies</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/corentin-tolisso" target="_blank">
+                        <img src="assets//images/team/corentin_tolisso.png" alt="Corentin Tolisso">
+                        <h3>Corentin Tolisso</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row bayern-heading">
+                <div class="col-12">
+                    <h3>FORWARDS</h3>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row players-section">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/serge-gnabry" target="_blank">
+                        <img src="assets//images/team/serge-gnabry.png" alt="Serge Gnabry">
+                        <h3>Serge Gnabry</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/fiete-arp" target="_blank">
+                        <img src="assets//images/team/fiete_arp.png" alt="Fiete Arp">
+                        <h3>Fiete Arp</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/ivan-perisic" target="_blank">
+                        <img src="assets//images/team/ivan_perisic.png" alt="Ivan Perišić">
+                        <h3>Ivan Perišić</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/thomas-mueller" target="_blank">
+                        <img src="assets//images/team/thomas_mueller.png" alt="Thomas Müller">
+                        <h3>Thomas Müller</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/kingsley-coman" target="_blank">
+                        <img src="assets//images/team/kingsley_coman.png" alt="Kingsley Coman">
+                        <h3>Kingsley Coman</h3>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://fcbayern.com/en/teams/professionals/robert-lewandowski" target="_blank">
+                        <img src="assets//images/team/robert_lewandowski.png" alt="Robert Lewandowski">
+                        <h3>Robert <br> Lewandowski</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--To build my footer section I used the bootstrap grid system which responds fully accross all screen sizes-->
+        <footer class="bayern-footer">
+            <div class="container">
+                <!--I used the bootstrap justify-content-center class to center all content-->
+                <!--in this section i added some of the sponsors of Bayern Munchen and have provided a link to their websites-->
+                <div class="row justify-content-center bayern-footer-sponsors">
+                    <div class="col-4 col-md-3">
+                        <a href="https://www.adidas.co.uk/men?cm_mmc=AdieSEM_Google-_-adidas-Brand-B-Exact-_-Brand-adidas-Men-_-adidas&cm_mmca1=UK&cm_mmca2=e&ds_kid=43700019176333921&gclid=EAIaIQobChMI5o6A0PS16gIVme3tCh2ehQgkEAAYASAAEgLG7fD_BwE&gclsrc=aw.ds" target="_blank">
+                        <img src="assets//images/sponsors/adidas.png" alt="Adidas logo">
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-3">
+                        <a href="https://www.audi.co.uk/finance-and-offers/three-months-on-us.html?sc_ppc=p1111531431&gclid=EAIaIQobChMIo4GuvvW16gIVhLHtCh0OsQDyEAAYASAAEgK3vfD_BwE" target="_blank">
+                        <img src="assets//images/sponsors/audi.png" alt="Audi logo">
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-3">
+                        <a href="https://www.qatarairways.com/en-gb/homepage.html?gclid=EAIaIQobChMI1OD2n_a16gIVze3tCh01wg6jEAAYASAAEgI2DvD_BwE&s_kwcid=AL!3739!3!408025099429!e!!g!!qatar%20airways&ef_id=EAIaIQobChMI1OD2n_a16gIVze3tCh01wg6jEAAYASAAEgI2DvD_BwE:G:s" target="_blank">
+                        <img src="assets//images/sponsors/qatar.png" alt="Qatar Airways logo">
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-3">
+                        <a href="https://www.t-mobile.com/" target="_blank">
+                        <img src="assets//images/sponsors/t-mobile.png" alt="T-Mobile logo">
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-3">
+                        <a href="https://www.allianz.com/en.html" target="_blank">
+                        <img src="assets//images/sponsors/allianz.png" alt="Allianz logo">
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-3">
+                        <a href="https://www.dhl.com/en.html" target="_blank">
+                        <img src="assets//images/sponsors/dhl.png" alt="DHL logo">
+                        </a>
+                    </div>
+                </div>
+                <!--In this section I added anchor links to Bayern Munchens social media pages-->
+                <div class="row justify-content-center footer-social-media">
+                    <div class="col-2 col-md-1">
+                        <a href="https://www.facebook.com/fcbayern.en/" target="_blank">
+                            <!--For the icons I used font awesome-->
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <span class="sr-only">Facebook</span>
+                    </div>
+                    <div class="col-2 col-md-1">
+                        <a href="https://www.instagram.com/fcbayern/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                        <span class="sr-only">Instagram</span>
+                    </div>
+                    <div class="col-2 col-md-1">
+                        <a href="https://www.youtube.com/user/fcbayern" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                        </a>
+                        <span class="sr-only">You tube</span>
+                    </div>
+                    <div class="col-2 col-md-1">
+                        <a href="https://twitter.com/fcbayernen" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <span class="sr-only">Twitter</span>
+                    </div>
+                </div>
+                <!--Here I added a button to take the user back to the top of the page to improve navigation-->
+                <div class="row top-nav-button justify-content-center">
+                    <div class="col-6 col-lg-2">
+                        <a href="#" class="btn">Back to top</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
 </html>
