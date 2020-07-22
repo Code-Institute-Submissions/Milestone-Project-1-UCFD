@@ -34,7 +34,7 @@
             </li>
         </ul>
         <a href="index.html" id="nav-link-login" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-user"></i>  Log in</a>
-<!--For the log in button I added a bootstrap modal which would enable users to log into their account--> 
+<!--For the log in button I used a bootstrap modal and added a bootstrap form within the body of the modal to allow users to submit their details--> 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -45,6 +45,7 @@
         </button>
       </div>
       <div class="modal-body">
+<!--Had some trouble getting the validation for my form to work so seeked advice from tutor support and kevin advised me to move my buttons within the form tags as they were just in the modal and he gave me the action link-->
 <form action="https://formdump.codeinstitute.net/" method="POST">
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
@@ -86,6 +87,7 @@
             </div>
         </div>
         <!--I added a navagation bar using bootstrap to enable to the user to be able to easily navigate between the months-->
+        <!--I didn't add the month of april to the navagation bar as there were no games in april-->
         <div class="row justify-content-end fixtures-month-nav">
             <div class="col-12">
                 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
@@ -1102,7 +1104,6 @@
             </div>
         </div>
     </div>
-<!--I used the bootstrap grid system for the footer nav section which is made from an unordered list -->
 </footer>  
 
 
