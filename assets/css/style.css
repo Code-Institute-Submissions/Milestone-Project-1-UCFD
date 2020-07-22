@@ -42,6 +42,12 @@ li a {
     color: #ffffff;
 }
 
+/* After adding sticky-top to the nav bar I was getting an issue with the login modal and Kevin from tutor support advised me on how to resolve this issue with the following piece of code */
+
+.modal-backdrop.show {
+    z-index: 1;
+}
+
 /*-------------------------------- Headings */
 
 .bayern-heading {
