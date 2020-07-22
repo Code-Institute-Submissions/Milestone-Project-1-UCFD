@@ -9,6 +9,7 @@
     <title>FC Bayern World</title>
 </head>
 <body>
+    <!--For my navigation menu I used a bootstrap navbar which collapses into a dropdown menu on smaller screen sizes-->
     <div class="container-fluid navbar-wrapper sticky-top">
         <nav class="navbar navbar-expand-md navbar-dark">
         <a class="navbar-brand" href="index.html"><img src="assets//images/teams/bayern-munchen.png" alt="logo"></a>
@@ -33,7 +34,7 @@
             </li>
         </ul>
         <a href="index.html" id="nav-link-login" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-user"></i>  Log in</a>
-        
+<!--For the log in button I used a bootstrap modal and added a bootstrap form within the body of the modal to allow users to submit their details--> 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -78,12 +79,15 @@
             </div>
         </div>
     </div>
+    <!--I added the months into my fixtures table to improve the user experience-->
     <div class="container fixtures-wrapper">
         <div class="row fixtures-month" id="january">
             <div class="col-12">
                  <h3>January</h3>
             </div>
         </div>
+        <!--I added a navagation bar using bootstrap to enable to the user to be able to easily navigate between the months-->
+        <!--I didn't add the month of april to the navagation bar as there were no games in april-->
         <div class="row justify-content-end fixtures-month-nav">
             <div class="col-12">
                 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
@@ -99,6 +103,7 @@
             </div>
         </div>
     <hr>
+        <!--To create my results table I used the bootstrap grid system which responds accross all screen sizes-->
         <div class="row fixture-league-name justify-content-start">
             <div class="col-12">
                 <h3>Bundesliga</h3>
@@ -130,6 +135,7 @@
             <div class="col-2 fixtures-banner-content">
                 <img src="assets//images/leagues/bundesliga.png" alt="Bundesliga logo">
             </div>
+            <!--In the results table I added a button that links to the match report on the Bayern Munchen website-->
             <div class="col-3 fixtures-banner-content">
                 <a class="btn" href="https://fcbayern.com/en/matches/profis/testspiele/2019-2020/testspiel-1.-fc-nuernberg---fc-bayern-muenchen-matchstatistics" target="_blank">Match Report</a>
             </div>
@@ -1027,9 +1033,11 @@
             </div>
         </div>
     </div>
-
+<!--To build my footer section I used the bootstrap grid system which responds fully accross all screen sizes-->
 <footer class="bayern-footer">
     <div class="container">
+       <!--I used the bootstrap justify-content-center class to center all content-->
+        <!--in this section i added some of the sponsors of Bayern Munchen and have provided a link to their websites-->
        <div class="row justify-content-center bayern-footer-sponsors">
            <div class="col-4 col-md-3">
               <a href="https://www.adidas.co.uk/men?cm_mmc=AdieSEM_Google-_-adidas-Brand-B-Exact-_-Brand-adidas-Men-_-adidas&cm_mmca1=UK&cm_mmca2=e&ds_kid=43700019176333921&gclid=EAIaIQobChMI5o6A0PS16gIVme3tCh2ehQgkEAAYASAAEgLG7fD_BwE&gclsrc=aw.ds" target="_blank">
@@ -1062,10 +1070,11 @@
               </a>
            </div>
         </div>
-        
+        <!--In this section I added anchor links to Bayern Munchens social media pages-->
         <div class="row justify-content-center footer-social-media">
             <div class="col-2 col-md-1">
                 <a href="https://www.facebook.com/fcbayern.en/" target="_blank">
+                <!--For the icons I used font awesome-->
                 <i class="fab fa-facebook-f"></i>
                 </a>
                 <span class="sr-only">Facebook</span>
@@ -1089,6 +1098,7 @@
                 <span class="sr-only">Twitter</span>
             </div>
         </div>
+        <!--Here I added a button to take the user back to the top of the page to improve navigation-->
         <div class="row top-nav-button justify-content-center">
             <div class="col-6 col-lg-2">
                  <a href="#" class="btn">Back to top</a>
