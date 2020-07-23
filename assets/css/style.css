@@ -325,7 +325,7 @@ li a {
 
 /* I used 100vh for the footer section so that it fills the whole screen on all devices to improve design */
 .bayern-footer {
-    min-height: 50vh;
+    min-height: 40vh;
     background-color: #c92b2b;
 }
 
@@ -348,7 +348,7 @@ li a {
 
 .footer-social-media i {
     font-size: 30px;
-    margin-top: 4rem;
+    margin-top: 2rem;
     color: #ffffff;
 }
 
@@ -356,31 +356,11 @@ li a {
     color: #797979;
 }
 
-.footer-nav-section {
-    margin-top: 12rem;
-}
-
-.footer-nav-section ul {
-    list-style-type: none;
-    border-right: 1px solid #ffffff;
-    height: 176px;
-    padding: 0px;
-    margin-left: 1rem;
-}
-
-.footer-nav-section a {
-    font-family: "Exo", sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    color: #ffffff;
-    line-height: 2rem;
-}
-
 .top-nav-button a {
     font-family: "Exo", sans-serif;
     font-size: 16px;
     font-weight: 300;
-    margin-top: 4rem;
+    margin-top: 2rem;
     color: #ffffff;
     border: 2px solid #ffffff;
 }
@@ -389,6 +369,7 @@ li a {
 .top-nav-button div {
     display: flex;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 
