@@ -23,3 +23,12 @@ and I also made use of the handy Bootstrap grid system which enabled me to make 
 - To create a platform for fans of FC Bayern München to be able to keep up to date with the latest club news, results, upcoming fixtures 
   as well as being able to purchase tickets for upcoming matches, read match reports, buy merchandise from the shop and learn more about 
   their favourite players. 
+
+- To use HTML and CSS to create a static front end website which is fully responsive across all screen sizes through the use of Bootstraps 
+  grid system. 
+
+- To create a website that has an intuitive navigational system through the use of, menu items, drop downs, representational icons, 
+  pagination and buttons which link to different areas on the same page.
+
+- To maintain a consistent design by using the same fonts, colours, buttons and imagery to make it more appealing to the user which will 
+  make them want to continue using the website. 
