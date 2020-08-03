@@ -93,3 +93,13 @@ coming up and buy tickets. The team section allows users to see all of the playe
 
 Each page will contain a footer section which will provide links to the sponsors of the club, social media links and a button which will take 
 the user back to the top of the page. 
+
+### Skeleton Plane 
+
+For me it is very important that my website is easy to navigate through to ensure a great user experience. The main navigational tool for my 
+website will the be the navigation bar at the top of the page which will collapse into a dropdown menu on smaller screen sizes. As mentioned 
+in the structure plane, my footer section will contain a button which will take the user back to the top of the screen to save them having 
+to scroll all the way up. My fixtures and results page will feature navigational buttons that will allow them to navigate between the 
+different months for ease of use. I have also consciously tried to keep the number of features on each page to a minimum to ensure each page 
+is a user friendly environment. 
+
