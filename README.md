@@ -195,4 +195,33 @@ which takes the user back to the top of the page to improve user experience.
 - As seen in my wireframe, I designed a page for the players that would have their bio and information but I decided to leave this out as 
   it would have taken too much time, however this is a feature I would definitely like to add in the future.
 
-- Another feature I would like to add at a later date is a page which gives users the opportunity to sign up to a newsletter.  
+- Another feature I would like to add at a later date is a page which gives users the opportunity to sign up to a newsletter. 
+
+## Technologies Used 
+
+### HTML5 
+
+This is the programming language that I used to build the main structure of my website and add all of the content. 
+
+### CSS3
+
+This is the programming language that I used to style the HTML5 to match my wireframe. 
+
+### Bootstrap 
+
+The bootstrap library was used throughout my project for various components and I used the Bootstrap grid system to make my website fully 
+responsive across all screen sizes. 
+
+### Git Hub 
+
+I used Git hub to deploy the final version of my project to Git hub pages. 
+
+### Version control 
+
+Throughout the process of developing my project I used Git pods version control to make regular commits to ensure I had previous versions 
+of my code stored. 
+
+### Git Pod 
+
+The main tool I used to build my project was Git pod’s integrated development environment. 
+
