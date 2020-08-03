@@ -103,3 +103,25 @@ to scroll all the way up. My fixtures and results page will feature navigational
 different months for ease of use. I have also consciously tried to keep the number of features on each page to a minimum to ensure each page 
 is a user friendly environment. 
 
+### Surface Plane 
+
+After much careful consideration in thinking out my design process up until this point, it was now time for me to start sketching out my 
+design in a wireframe and really start to bring my ideas to life as well as figuring out the kind of typography I am going to use, the colour 
+schemes and images. 
+
+As I began work on my wireframe in Figma, I knew that the main colours that I wanted to use throughout my website were red and white as these 
+are the colours that FC Bayern München are associated with. 
+
+I used google fonts to decide what font I wanted to use for my website and I ended up going with Exo and Sans Serif as a fall back. 
+For my fonts I used a dark grey for my headings and a lighter grey for all other text which were used throughout the website to ensure 
+consistency. 
+
+I used Photoshop to create the images of the players on the Team page. I did this by getting a png image of each player from the FC Bayern 
+München website and I simply added a grey background layer and then cropped the image. I added a hero image to my home and team pages as I 
+believe these are always a very positive thing to be presented with first when you visit a website. 
+
+As seen in my wireframe, I created a page which you would be taken to when you clicked on a player, containing their bio and information. 
+However, after discussing my wire frame with my mentor she advised me that this may be too time consuming and isn’t necessary at this time, 
+therefore I decided to leave out this feature for a future release and just link the players to the real FC Bayern München website. 
+
+Once my wireframe was complete it was now time to start bringing it to life and I began developing it in Git Pod. 
