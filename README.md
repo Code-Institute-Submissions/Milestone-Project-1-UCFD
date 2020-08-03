@@ -251,3 +251,18 @@ For my project I decided to use the font Exo which I imported from Google Fonts.
 
 I used the free online formatter to format all of my HTML code to keep it tidy and improve readability. 
 
+## Testing 
+
+### User story tests 
+
+### Project Stakeholder 
+
+The creator of this project would want the platform to provide not only an inviting environment where users can easily obtain detailed 
+information about the club, but also gain access to a range of services such as to buy tickets, visit the shop and bring new fans to the club. 
+This was accomplished through a carefully thought out design process which the main goal was to provide an excellent standard of user experience. 
+
+Making the website easy to navigate through was a main priority, which was achieved through a number of features such as the navigation bar, 
+menu items, dropdown menu’s, pagination and buttons. The colours and typography were carefully selected to ensure the website draws in its 
+users attention and makes them want to continue through the site. It was also crucial to make sure that each part of the website was not 
+overcrowded which improves readability and doesn’t confuse users. 
+
