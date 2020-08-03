@@ -15,3 +15,11 @@ appeal to the user.
 
 I used Bootstraps CSS library extensively throughout my project for components such as buttons, navigation bars, drop downs, carousels 
 and I also made use of the handy Bootstrap grid system which enabled me to make my website responsive across all screen sizes. 
+
+## User Experience 
+
+### Main aims 
+
+- To create a platform for fans of FC Bayern München to be able to keep up to date with the latest club news, results, upcoming fixtures 
+  as well as being able to purchase tickets for upcoming matches, read match reports, buy merchandise from the shop and learn more about 
+  their favourite players. 
