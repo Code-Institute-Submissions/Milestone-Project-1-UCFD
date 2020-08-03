@@ -125,3 +125,10 @@ However, after discussing my wire frame with my mentor she advised me that this 
 therefore I decided to leave out this feature for a future release and just link the players to the real FC Bayern München website. 
 
 Once my wireframe was complete it was now time to start bringing it to life and I began developing it in Git Pod. 
+
+## Wireframe 
+
+![Wireframes created in Figma](https://jthomp1993.github.io/Milestone-Project-1-UCFD/blob/master/assets/images/read-me-images/figma.png)
+
+[The workspace in Figma can be viewed here.](https://www.figma.com/file/JSC0RlIGPyS33br8YpqVdH/Milestone-Project-1-Wireframe?node-id=0%3A1)
+
