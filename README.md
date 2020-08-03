@@ -225,3 +225,29 @@ of my code stored.
 
 The main tool I used to build my project was Git pod’s integrated development environment. 
 
+## Additional Tools Used 
+
+### Figma
+
+I used Figma to design the wireframes for my project.
+
+### Adobe Photoshop 
+
+I used photoshop to edit some of the images of the players for the team page in my project. 
+
+### W3C Markup Validation Service 
+
+When I had finished my project I ran all of my code through the W3C validator to check for errors in my HTML and CSS code. 
+
+### Font Awesome 
+
+I used font awesome throughout my project for representational icons and social media logo’s. 
+
+### Google Fonts 
+
+For my project I decided to use the font Exo which I imported from Google Fonts. 
+
+### Free Formatter 
+
+I used the free online formatter to format all of my HTML code to keep it tidy and improve readability. 
+
