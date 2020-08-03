@@ -67,3 +67,23 @@ draw some inspiration for me to implement into my own project. After carrying ou
 apparent to me that with my current skill set and resources I would not be able to achieve the same standard as of those websites already 
 out there as it would require technologies which I don’t have any knowledge of at present. However, I knew that I could use my skills in 
 HTML and CSS to develop a static front end website that could provide the main aims that I want to deliver to my users. 
+
+### Scope Plane 
+
+After defining who my demographic were, I began to focus on exactly what my website was going to provide to its users. There are lots of 
+features which could be added to the website of a football team so I knew it was crucial to narrow it down to a select few that would provide 
+the best use to my key demographic. 
+
+From the beginning I knew that I wanted to include a section that shows the results and upcoming fixtures as this tends to be the most common 
+reason why a football fan visits their teams website. A news section that would enable users to keep up to date with what is going on with 
+the club. A team section which shows the players and allows the user to learn more about them and I had thought about adding a shop section 
+and a newsletter section. After much consideration I decided to just add a link to the FC Bayern München shop rather than create a whole page 
+as it may have become too time consuming and also I decided that I would leave the news letter section to be added at a later date.
+
+### Structure Plane 
+
+After deciding what features I wanted to include and what I wanted to leave out for the time being, I began to think about how I was going 
+to structure these features to create a website that is easy and intuitive to use. I decided that the pages my website would contain would be 
+Home, Fixtures, Results and Team. These are the key fundamentals of what I was wanting to provide to my users and this leaves me the option 
+to add a shop and club news section in a future release. However my home page is going to include links to the shop and club news section of 
+the real Bayern München website so my users aren’t missing out. 
