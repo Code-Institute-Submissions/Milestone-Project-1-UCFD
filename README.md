@@ -87,3 +87,9 @@ to structure these features to create a website that is easy and intuitive to us
 Home, Fixtures, Results and Team. These are the key fundamentals of what I was wanting to provide to my users and this leaves me the option 
 to add a shop and club news section in a future release. However my home page is going to include links to the shop and club news section of 
 the real Bayern München website so my users aren’t missing out. 
+
+The fixtures and results section will allow users to view the results of matches and read the match reports, see what games the team having 
+coming up and buy tickets. The team section allows users to see all of the players, what positions they play and learn more about each of them. 
+
+Each page will contain a footer section which will provide links to the sponsors of the club, social media links and a button which will take 
+the user back to the top of the page. 
