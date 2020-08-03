@@ -157,3 +157,12 @@ which takes the user back to the top of the page to improve user experience.
 - The user will then have the opportunity to visit the FC Bayern München shop. 
 
 - The last feature on my home page is a team section which links directly to my Team page. 
+
+### Fixtures 
+
+- The fixtures page consists of a table which displays the entire fixture list for 2020 across all competitions.
+
+- The tables are divided up into months and there is a navigation bar which enables the user to easily change between the months.
+
+- The table provides the user with the details of the locations, dates, times and competitions of each game, as well as giving the user 
+  the opportunity to buy tickets for the upcoming games.
