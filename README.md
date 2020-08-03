@@ -266,3 +266,19 @@ menu items, dropdown menu’s, pagination and buttons. The colours and typograph
 users attention and makes them want to continue through the site. It was also crucial to make sure that each part of the website was not 
 overcrowded which improves readability and doesn’t confuse users. 
 
+### First time user 
+
+### 1st user (Who wants to learn more about the players)
+
+This user has just recently discovered FC Bayern München and wants to find out who the players are and learn more about them. 
+So for the user to do this they could either:
+
+- Use the navigation bar at the top of the screen to select team which would take them straight the section they are looking for.
+
+- They could scroll down the home page where they would find the team section which provides the opportunity to click on the view team 
+  button which would direct them to the page they are looking for. 
+
+- Once on the team page the user would be able to see who all of the players are and be able to learn what positions they play. 
+  The user also has the option of clicking on each player which directs them to the FC Bayern München website which will provide them with 
+  additional information about each player. 
+
