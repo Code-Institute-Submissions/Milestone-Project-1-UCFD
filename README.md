@@ -183,3 +183,16 @@ which takes the user back to the top of the page to improve user experience.
 
 - The rest of the page consists of a grid which displays all of the players divided up into the positions that they play. 
   The user can click on each players which takes them to the FC Bayern München website where they can learn more about each player. 
+
+### Features for future releases 
+
+- On my Home page I have included a Club News section which links to the FC Bayern München website, however in the future I would like to 
+  add my own Club News page that contains all of the up to date news articles. 
+
+- On my Home page I have a Shop section which links to the FC Bayern München website, however I would like to add my own Shop page as a 
+  future release that would give users the opportunity to buy merchandise directly on my website. 
+
+- As seen in my wireframe, I designed a page for the players that would have their bio and information but I decided to leave this out as 
+  it would have taken too much time, however this is a feature I would definitely like to add in the future.
+
+- Another feature I would like to add at a later date is a page which gives users the opportunity to sign up to a newsletter.  
