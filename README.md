@@ -282,3 +282,15 @@ So for the user to do this they could either:
   The user also has the option of clicking on each player which directs them to the FC Bayern München website which will provide them with 
   additional information about each player. 
 
+### 2nd user (Who wants to purchase tickets to a game for their son)
+
+This user lives in dortmund and wants to find out when FC Bayern München are next playing there so that they can buy tickets to the game for 
+their sons birthday. This is how the user would achieve this:
+
+- When they arrive on the website, they would use the navigation bar to select Matches which would provide them with the dropdown where they 
+  will select Fixtures.
+
+- Once on the fixtures page the user could search through the list for the next time FC Bayern München are playing in Dortmund.
+
+- After finding a match that suited them, they could select the buy tickets button on the right hand side of the table which would direct them 
+  to the ticket store and they could purchase the tickets. 
