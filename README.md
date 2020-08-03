@@ -294,3 +294,18 @@ their sons birthday. This is how the user would achieve this:
 
 - After finding a match that suited them, they could select the buy tickets button on the right hand side of the table which would direct them 
   to the ticket store and they could purchase the tickets. 
+
+### Returning Users 
+
+### 1st user (Who uses the website after every game to check the result and read the match report)
+
+This user often can’t watch the games live due to being at work, therefore after every game they use the website to check the result and read 
+the match report. To achieve this the user would:
+
+- Arrive on the home page and use the navigation bar at the top of the screen to select matches. This would provide the user with the dropdown 
+  menu where they would select results. 
+
+- Once the user is on the results page they can use the navigation buttons to select the month they require to quickly find the latest result. 
+
+- After checking the result, the user can then click on the read match report button on the right hand side of the table which will take them 
+  to the match report on the FC Bayern München website. 
