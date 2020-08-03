@@ -336,3 +336,11 @@ following ways.
 - The next error was informing me that within my Bootstrap form The aria-describedby attribute must point to an element in the same document. 
   To resolve this issue I removed the attribute as it was not required. 
 
+### fixtures.html 
+
+- I received a warning message stating that the document appears to be written in German and the html start tag has lang=“en” and I should 
+  consider using lang=“de”. As it is just the names of the teams that are written in German I wanted to keep my html start tag as lang=“en”. 
+  My mentor confirmed that this was okay to do so.
+
+- I had an error due to adding the type=“button” attribute and value to a number of anchor tags which is not necessary. To resolve this issue 
+  I simply removed the type=“button” attribute and value. 
