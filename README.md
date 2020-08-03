@@ -176,3 +176,10 @@ which takes the user back to the top of the page to improve user experience.
 
 - The results tables provide the user with the details of the locations, dates, times, competitions and results as well as giving the user 
   the opportunity to read the match report for each game that has been played. 
+
+### Team 
+
+- The first thing the the user will be presented with on the Team page is a hero image which shows the entire squad. 
+
+- The rest of the page consists of a grid which displays all of the players divided up into the positions that they play. 
+  The user can click on each players which takes them to the FC Bayern München website where they can learn more about each player. 
