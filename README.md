@@ -143,3 +143,17 @@ navigation bar remain at the top of the screen at all times.
 The footer section is at the bottom of every page across my website. It features the logo’s of some of the sponsors of the club and link to 
 their websites when clicked. Below that are links to all of the clubs social media pages. At the bottom of the footer section is a button 
 which takes the user back to the top of the page to improve user experience.
+
+### Home 
+
+- The first thing the user will see when arriving at the home page is a carousel which features a number of images of the players.
+
+- The next thing the user will encounter is the last result and next fixture tables which provide the location and time of the last and 
+  next matches, as well as provide the user the opportunity to read the match report and buy tickets for the next game.
+
+- The user will then move on to the club news section which consists of 6 articles which link directly to the FC Bayern München website. 
+  This enables the user to keep up to date with everything happening regarding the club.
+
+- The user will then have the opportunity to visit the FC Bayern München shop. 
+
+- The last feature on my home page is a team section which links directly to my Team page. 
