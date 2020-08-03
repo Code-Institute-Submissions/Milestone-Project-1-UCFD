@@ -320,3 +320,19 @@ To achieve this the user would:
 - Once at the club news section the user will be presented with a number of recent club news articles. The articles consist of an image, 
   title and summary and can be clicked which will direct them to the FC Bayern München website where they will be able to read the articles 
   in full. 
+
+### Validating HTML and CSS 
+
+### HTML 
+
+After running my code from my html documents through the W3C markup validation service I received some errors which were resolved in the 
+following ways.
+
+### index.html 
+
+- There was an error showing up for a number of lines as I had added a type=“button” attribute and value which is not necessary within an 
+  anchor tag. To resolve this issue I simply removed type=“button”.
+
+- The next error was informing me that within my Bootstrap form The aria-describedby attribute must point to an element in the same document. 
+  To resolve this issue I removed the attribute as it was not required. 
+
