@@ -56,3 +56,14 @@ I am a user who frequently uses the website to buy merchandise from the shop.
 
 I am a user who visits the website regularly to read the club news section, this helps to ensure that I don’t miss out on any important news 
 regarding the club. 
+
+## Design Process 
+
+### Strategy Plane 
+
+At the beginning of my design process, I started by making a list of user stories which helped me identify who my target audience would be 
+for this project. After determining my key demographic, I began researching other websites for football teams to see the pro’s and cons and 
+draw some inspiration for me to implement into my own project. After carrying out research of other football teams websites it became 
+apparent to me that with my current skill set and resources I would not be able to achieve the same standard as of those websites already 
+out there as it would require technologies which I don’t have any knowledge of at present. However, I knew that I could use my skills in 
+HTML and CSS to develop a static front end website that could provide the main aims that I want to deliver to my users. 
