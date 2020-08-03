@@ -166,3 +166,13 @@ which takes the user back to the top of the page to improve user experience.
 
 - The table provides the user with the details of the locations, dates, times and competitions of each game, as well as giving the user 
   the opportunity to buy tickets for the upcoming games.
+
+### Results 
+
+- The results page consists of a table which displays the results of the games that have been played across all competitions in 2020.
+
+- The same as on the fixtures page the tables are divided up into months and there is a navigation bar which enables the user to easily 
+  change between the months.
+
+- The results tables provide the user with the details of the locations, dates, times, competitions and results as well as giving the user 
+  the opportunity to read the match report for each game that has been played. 
