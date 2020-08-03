@@ -309,3 +309,14 @@ the match report. To achieve this the user would:
 
 - After checking the result, the user can then click on the read match report button on the right hand side of the table which will take them 
   to the match report on the FC Bayern München website. 
+
+### 2nd user (Who regularly visits the website to read the club news section)
+
+This user likes to keep up to date with what’s going on with the club so regularly visits the website to check the club news section. 
+To achieve this the user would: 
+
+- Arrive on the home page and scroll down until they reach the club news section. 
+
+- Once at the club news section the user will be presented with a number of recent club news articles. The articles consist of an image, 
+  title and summary and can be clicked which will direct them to the FC Bayern München website where they will be able to read the articles 
+  in full. 
