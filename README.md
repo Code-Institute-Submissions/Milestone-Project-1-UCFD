@@ -132,3 +132,14 @@ Once my wireframe was complete it was now time to start bringing it to life and 
 
 [The workspace in Figma can be viewed here.](https://www.figma.com/file/JSC0RlIGPyS33br8YpqVdH/Milestone-Project-1-Wireframe?node-id=0%3A1)
 
+## Features 
+
+### Features across all pages 
+
+The navigation bar is at the top of all the pages across my website which is fully responsive across all screen sizes which I achieved using 
+Bootstrap. On smaller screen sizes the navigation bar collapses into a drop down menu. I used the sticky-top Bootstrap class to make the 
+navigation bar remain at the top of the screen at all times. 
+
+The footer section is at the bottom of every page across my website. It features the logo’s of some of the sponsors of the club and link to 
+their websites when clicked. Below that are links to all of the clubs social media pages. At the bottom of the footer section is a button 
+which takes the user back to the top of the page to improve user experience.
