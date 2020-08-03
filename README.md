@@ -32,3 +32,27 @@ and I also made use of the handy Bootstrap grid system which enabled me to make 
 
 - To maintain a consistent design by using the same fonts, colours, buttons and imagery to make it more appealing to the user which will 
   make them want to continue using the website. 
+
+## User Stories 
+
+### Project Stakeholders 
+
+As one of the main stakeholders in this project I am hoping to see this platform provide a useful service to the fans of the club, keeping 
+them up to date with news, driving ticket sales, increasing the number of sales in the shop and also bringing new fans to the club. 
+
+### First Time Users
+
+I am a user who has only just discovered the team and wants to use the website to see who are the players are and learn more about them.  
+
+My son is a fan of FC Bayern München and I’m wanting to get him tickets to a game for his birthday. We live in Dortmund so I need to find 
+out when they are next playing here and buy the tickets. 
+
+### Returning Users 
+
+I am a user who often can’t watch the games live due to being at work, therefore I use the website after every game to see the result and 
+read the match report.
+
+I am a user who frequently uses the website to buy merchandise from the shop.
+
+I am a user who visits the website regularly to read the club news section, this helps to ensure that I don’t miss out on any important news 
+regarding the club. 
