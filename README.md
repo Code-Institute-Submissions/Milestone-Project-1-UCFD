@@ -397,3 +397,19 @@ Here is the following process that I used to deploy my project on Github pages:
 - From there I clicked on the source dropdown and selected ‘master branch’.
 
 - This deployed my project onto ‘Github pages’ and now others will be able to access it. 
+
+## Cloning 
+
+If you would like to deploy your own version of my project and develop it even further use the following steps:
+
+- Visit my repository on ‘Github pages’
+
+- Click on the green code and download button and then copy the http link which is provided
+
+- Open the terminal within your chosen IDE 
+
+- Using the terminal change your root directory to the location where you would like the cloned directory to be stored.
+
+- Then you need to enter git clone into the terminal followed by the http link that you copied earlier. 
+
+- Now all you need to do is press enter and doing so will create your local clone which you can work on yourself. 
