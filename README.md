@@ -2,7 +2,7 @@
 
 ## User Centric Front End Development - Milestone Project 1
 
-![FC Bayern München World](https://jthomp1993.github.io/Milestone-Project-1-UCFD/blob/master/assets/images/read-me-images/responsive-design.png)
+![FC Bayern München World](assets/images/read-me-images/responsive-design.png)
 
 FC Bayern München World, is a website that I created for FC Bayern München who are a German professional football team. 
 The aim of this project was to create an intuitive website that fans of the club can visit to keep up to date with latest club news, 
@@ -128,7 +128,7 @@ Once my wireframe was complete it was now time to start bringing it to life and 
 
 ## Wireframe 
 
-![Wireframes created in Figma](https://jthomp1993.github.io/Milestone-Project-1-UCFD/blob/master/assets/images/read-me-images/figma.png)
+![Wireframes created in Figma](assets/images/read-me-images/figma.png)
 
 [The workspace in Figma can be viewed here.](https://www.figma.com/file/JSC0RlIGPyS33br8YpqVdH/Milestone-Project-1-Wireframe?node-id=0%3A1)
 
