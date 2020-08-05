@@ -235,6 +235,10 @@ I used Figma to design the wireframes for my project.
 
 I used photoshop to edit some of the images of the players for the team page in my project. 
 
+### Chrome Developer Tools 
+
+I used chromes dev tools throught the process of building my project to test responsiveness across different devices
+
 ### W3C Markup Validation Service 
 
 When I had finished my project I ran all of my code through the W3C validator to check for errors in my HTML and CSS code. 
@@ -413,3 +417,15 @@ If you would like to deploy your own version of my project and develop it even f
 - Then you need to enter git clone into the terminal followed by the http link that you copied earlier. 
 
 - Now all you need to do is press enter and doing so will create your local clone which you can work on yourself. 
+
+## Credits 
+
+### Images 
+
+All of the club logo images were taken from:
+
+- Google images 
+
+The rest of the images were all taken from:
+
+- fcbayern.com 
