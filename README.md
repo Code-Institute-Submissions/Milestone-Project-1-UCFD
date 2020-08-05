@@ -356,3 +356,14 @@ following ways.
 ## CSS 
 
 After running my code from style.css through the W3C markup validation service I did not receive any errors. 
+
+## Browser compatibility 
+
+To make sure my project was compatible with the following browsers, I viewed my project in them and made sure the responsiveness worked 
+effectively across all screen sizes.
+
+- Google Chrome 
+
+- Mozilla Firefox 
+
+- Safari 
