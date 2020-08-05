@@ -344,3 +344,15 @@ following ways.
 
 - I had an error due to adding the type=“button” attribute and value to a number of anchor tags which is not necessary. To resolve this issue 
   I simply removed the type=“button” attribute and value. 
+
+### team.html
+
+- On a number of lines I received an error due to adding the type=“button” attribute and value within an anchor tag which is not necessary. 
+  To resolve this issue I simply removed the type=“button” attribute and value. 
+
+- I had an error due to adding height=“50px” as inline styling on an image element. To resolve this I removed the inline styling and styled 
+  it through style.css instead. 
+
+## CSS 
+
+After running my code from style.css through the W3C markup validation service I did not receive any errors. 
