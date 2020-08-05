@@ -367,3 +367,21 @@ effectively across all screen sizes.
 - Mozilla Firefox 
 
 - Safari 
+
+## Testing the functionality of all links 
+
+The following tests were carried out to ensure that each link functioned appropriately:
+
+- Each menu item was clicked on to ensure it was linked to the correct page and was functioning properly. 
+
+- Each button was clicked to make sure it opened the correct page and it opens in a new window. 
+
+- Each navigation button for the months in fixtures.html and results.html were clicked to ensure they take the user to the correct location. 
+
+- The back to top button in the footer was clicked to check it takes the user back to the top. 
+
+- The social media links were clicked to test that they take the user to the correct page and open in a new window. 
+
+- The sponsor logo’s were clicked to ensure they take the user to the correct page and open in a new window. 
+
+- All of the players in team.html were clicked to ensure they take the user to the correct page and it is opened within a new window. 
