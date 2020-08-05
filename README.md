@@ -429,3 +429,13 @@ All of the club logo images were taken from:
 The rest of the images were all taken from:
 
 - fcbayern.com 
+
+## Acknowledgements 
+
+Thank you to the follow for their fantastic support throughout my first milestone project:
+
+- My mentor Seun Owonikoko
+
+- Student care and tutor support from Code Institute
+
+- The support from my fellow students on Slack
