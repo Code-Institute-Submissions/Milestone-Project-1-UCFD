@@ -385,3 +385,15 @@ The following tests were carried out to ensure that each link functioned appropr
 - The sponsor logo’s were clicked to ensure they take the user to the correct page and open in a new window. 
 
 - All of the players in team.html were clicked to ensure they take the user to the correct page and it is opened within a new window. 
+
+## Deployment 
+
+Here is the following process that I used to deploy my project on Github pages:
+
+- First I clicked on the ‘settings’ tab at the top of my repository on Github.
+
+- I then scrolled down until I reached the ‘Github pages’ section.
+
+- From there I clicked on the source dropdown and selected ‘master branch’.
+
+- This deployed my project onto ‘Github pages’ and now others will be able to access it. 
