@@ -16,7 +16,7 @@ appeal to the user.
 I used Bootstraps CSS library extensively throughout my project for components such as buttons, navigation bars, drop downs, carousels 
 and I also made use of the handy Bootstrap grid system which enabled me to make my website responsive across all screen sizes.
 
-You can view the project [here] (https://jthomp1993.github.io/Milestone-Project-1-UCFD/)
+[You can view the project here](https://jthomp1993.github.io/Milestone-Project-1-UCFD/)
 
 ## User Experience 
 
@@ -201,20 +201,20 @@ which takes the user back to the top of the page to improve user experience.
 
 ## Technologies Used 
 
-[HTML5] (https://en.wikipedia.org/wiki/HTML5)
+[HTML5](https://en.wikipedia.org/wiki/HTML5)
 
 This is the programming language that I used to build the main structure of my website and add all of the content. 
 
-[CSS3] (https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+[CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
 This is the programming language that I used to style the HTML5 to match my wireframe. 
 
-[Bootstrap] (https://getbootstrap.com/)
+[Bootstrap](https://getbootstrap.com/)
 
 The bootstrap library was used throughout my project for various components and I used the Bootstrap grid system to make my website fully 
 responsive across all screen sizes. 
 
-[GitHub] (https://github.com)
+[GitHub](https://github.com)
 
 I used Git hub to deploy the final version of my project to Git hub pages. 
 
@@ -223,37 +223,37 @@ I used Git hub to deploy the final version of my project to Git hub pages.
 Throughout the process of developing my project I used Git pods version control to make regular commits to ensure I had previous versions 
 of my code stored. 
 
-[Git Pod] (https://www.gitpod.io/) 
+[Git Pod](https://www.gitpod.io/) 
 
 The main tool I used to build my project was Git pod’s integrated development environment. 
 
 ## Additional Tools Used 
 
-[Figma] (https://www.figma.com/)
+[Figma](https://www.figma.com/)
 
 I used Figma to design the wireframes for my project.
 
-[Adobe Photoshop] (https://www.adobe.com/uk/products/photoshop.html?gclid=EAIaIQobChMImuyq69qG6wIVWODtCh1ARgSlEAAYASAAEgJfKfD_BwE&sdid=88X75SKR&mv=search&ef_id=EAIaIQobChMImuyq69qG6wIVWODtCh1ARgSlEAAYASAAEgJfKfD_BwE:G:s&s_kwcid=AL!3085!3!428621692972!e!!g!!photoshop!9753976727!99414617483) 
+[Adobe Photoshop](https://www.adobe.com/uk/products/photoshop.html?gclid=EAIaIQobChMImuyq69qG6wIVWODtCh1ARgSlEAAYASAAEgJfKfD_BwE&sdid=88X75SKR&mv=search&ef_id=EAIaIQobChMImuyq69qG6wIVWODtCh1ARgSlEAAYASAAEgJfKfD_BwE:G:s&s_kwcid=AL!3085!3!428621692972!e!!g!!photoshop!9753976727!99414617483) 
 
 I used photoshop to edit some of the images of the players for the team page in my project. 
 
-[Chrome Developer Tools] (https://developers.google.com/web/tools/chrome-devtools)
+[Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
 
 I used chromes dev tools throught the process of building my project to test responsiveness across different devices
 
-[W3C Markup Validation Service] (https://validator.w3.org/)
+[W3C Markup Validation Service](https://validator.w3.org/)
 
 When I had finished my project I ran all of my code through the W3C validator to check for errors in my HTML and CSS code. 
 
-[Font Awesome] (https://fontawesome.com/)
+[Font Awesome](https://fontawesome.com/)
 
 I used font awesome throughout my project for representational icons and social media logo’s. 
 
-[Google Fonts] (https://fonts.google.com/) 
+[Google Fonts](https://fonts.google.com/) 
 
 For my project I decided to use the font Exo which I imported from Google Fonts. 
 
-[Free Formatter] (https://www.freeformatter.com/html-formatter.html)
+[Free Formatter](https://www.freeformatter.com/html-formatter.html)
 
 I used the free online formatter to format all of my HTML code to keep it tidy and improve readability. 
 
@@ -368,11 +368,11 @@ After running my code from style.css through the W3C markup validation service I
 To make sure my project was compatible with the following browsers, I viewed my project in them and made sure the responsiveness worked 
 effectively across all screen sizes.
 
-- [Google Chrome] (https://www.google.co.uk/chrome/?brand=CHBD&gclid=EAIaIQobChMI6dyd7tyG6wIVUuztCh2F4ALVEAAYASAAEgJsp_D_BwE&gclsrc=aw.ds)
+- [Google Chrome](https://www.google.co.uk/chrome/?brand=CHBD&gclid=EAIaIQobChMI6dyd7tyG6wIVUuztCh2F4ALVEAAYASAAEgJsp_D_BwE&gclsrc=aw.ds)
 
-- [Mozilla Firefox] (https://www.mozilla.org/en-GB/firefox/new/)
+- [Mozilla Firefox](https://www.mozilla.org/en-GB/firefox/new/)
 
-- [Safari] (https://www.apple.com/uk/safari/) 
+- [Safari](https://www.apple.com/uk/safari/) 
 
 ## Testing the functionality of all links 
 
@@ -404,7 +404,7 @@ Here is the following process that I used to deploy my project on Github pages:
 
 - This deployed my project onto ‘Github pages’ and now others will be able to access it. 
 
-If you would like to view my project click [here] (https://jthomp1993.github.io/Milestone-Project-1-UCFD/)
+If you would like to view my project click [here](https://jthomp1993.github.io/Milestone-Project-1-UCFD/)
 
 ## Cloning 
 
@@ -422,7 +422,7 @@ If you would like to deploy your own version of my project and develop it even f
 
 - Now all you need to do is press enter and doing so will create your local clone which you can work on yourself. 
 
-If you would like to learn more about cloning click [here] (https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+If you would like to learn more about cloning click [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
 ## Credits 
 
@@ -430,11 +430,11 @@ If you would like to learn more about cloning click [here] (https://docs.github.
 
 All of the club logo images were taken from:
 
-- [Google images] (https://www.google.com/search?q=google+images&source=lnms&tbm=isch&sa=X&ved=2ahUKEwir8r223IbrAhUBilwKHRjwCK0Q_AUoAXoECBkQAw&biw=1440&bih=798) 
+- [Google images](https://www.google.com/search?q=google+images&source=lnms&tbm=isch&sa=X&ved=2ahUKEwir8r223IbrAhUBilwKHRjwCK0Q_AUoAXoECBkQAw&biw=1440&bih=798) 
 
 The rest of the images were all taken from:
 
-- [fcbayern.com] (https://fcbayern.com/en) 
+- [fcbayern.com](https://fcbayern.com/en) 
 
 ## Acknowledgements 
 
