@@ -323,9 +323,9 @@ li a {
 
 /*-------------------------------- Footer */
 
-/* I used 100vh for the footer section so that it fills the whole screen on all devices to improve design */
+/* Originally i had used 40vh for the height of the footer but this was causing there to be a large amount of blank space when viewed on an Ipad pro */
 .bayern-footer {
-    min-height: 40vh;
+    min-height: auto;
     background-color: #c92b2b;
 }
 
