@@ -199,59 +199,59 @@ which takes the user back to the top of the page to improve user experience.
 
 ## Technologies Used 
 
-### HTML5 
+[HTML5] (https://en.wikipedia.org/wiki/HTML5)
 
 This is the programming language that I used to build the main structure of my website and add all of the content. 
 
-### CSS3
+[CSS3] (https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 
 This is the programming language that I used to style the HTML5 to match my wireframe. 
 
-### Bootstrap 
+[Bootstrap] (https://getbootstrap.com/)
 
 The bootstrap library was used throughout my project for various components and I used the Bootstrap grid system to make my website fully 
 responsive across all screen sizes. 
 
-### Git Hub 
+[GitHub] (https://github.com)
 
 I used Git hub to deploy the final version of my project to Git hub pages. 
 
-### Version control 
+[Git Version control] (https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) 
 
 Throughout the process of developing my project I used Git pods version control to make regular commits to ensure I had previous versions 
 of my code stored. 
 
-### Git Pod 
+[Git Pod] (https://www.gitpod.io/) 
 
 The main tool I used to build my project was Git pod’s integrated development environment. 
 
 ## Additional Tools Used 
 
-### Figma
+[Figma] (https://www.figma.com/)
 
 I used Figma to design the wireframes for my project.
 
-### Adobe Photoshop 
+[Adobe Photoshop] (https://www.adobe.com/uk/products/photoshop.html?gclid=EAIaIQobChMImuyq69qG6wIVWODtCh1ARgSlEAAYASAAEgJfKfD_BwE&sdid=88X75SKR&mv=search&ef_id=EAIaIQobChMImuyq69qG6wIVWODtCh1ARgSlEAAYASAAEgJfKfD_BwE:G:s&s_kwcid=AL!3085!3!428621692972!e!!g!!photoshop!9753976727!99414617483) 
 
 I used photoshop to edit some of the images of the players for the team page in my project. 
 
-### Chrome Developer Tools 
+[Chrome Developer Tools] (https://developers.google.com/web/tools/chrome-devtools)
 
 I used chromes dev tools throught the process of building my project to test responsiveness across different devices
 
-### W3C Markup Validation Service 
+[W3C Markup Validation Service] (https://validator.w3.org/)
 
 When I had finished my project I ran all of my code through the W3C validator to check for errors in my HTML and CSS code. 
 
-### Font Awesome 
+[Font Awesome] (https://fontawesome.com/)
 
 I used font awesome throughout my project for representational icons and social media logo’s. 
 
-### Google Fonts 
+[Google Fonts] (https://fonts.google.com/) 
 
 For my project I decided to use the font Exo which I imported from Google Fonts. 
 
-### Free Formatter 
+[Free Formatter] (https://www.freeformatter.com/html-formatter.html)
 
 I used the free online formatter to format all of my HTML code to keep it tidy and improve readability. 
 
