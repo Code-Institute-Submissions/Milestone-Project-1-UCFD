@@ -218,7 +218,7 @@ responsive across all screen sizes.
 
 I used Git hub to deploy the final version of my project to Git hub pages. 
 
-[Git Version control] (https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) 
+[Git Version control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) 
 
 Throughout the process of developing my project I used Git pods version control to make regular commits to ensure I had previous versions 
 of my code stored. 
@@ -404,7 +404,7 @@ Here is the following process that I used to deploy my project on Github pages:
 
 - This deployed my project onto ‘Github pages’ and now others will be able to access it. 
 
-If you would like to view my project click [here](https://jthomp1993.github.io/Milestone-Project-1-UCFD/)
+[If you would like to view my project click here](https://jthomp1993.github.io/Milestone-Project-1-UCFD/)
 
 ## Cloning 
 
@@ -422,7 +422,7 @@ If you would like to deploy your own version of my project and develop it even f
 
 - Now all you need to do is press enter and doing so will create your local clone which you can work on yourself. 
 
-If you would like to learn more about cloning click [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+[If you would like to learn more about cloning click here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
 ## Credits 
 
