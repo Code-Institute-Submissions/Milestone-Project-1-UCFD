@@ -14,7 +14,9 @@ To develop my website I used HTML to build the core structure and then I used CS
 appeal to the user. 
 
 I used Bootstraps CSS library extensively throughout my project for components such as buttons, navigation bars, drop downs, carousels 
-and I also made use of the handy Bootstrap grid system which enabled me to make my website responsive across all screen sizes. 
+and I also made use of the handy Bootstrap grid system which enabled me to make my website responsive across all screen sizes.
+
+You can view the project [here] (https://jthomp1993.github.io/Milestone-Project-1-UCFD/)
 
 ## User Experience 
 
@@ -366,11 +368,11 @@ After running my code from style.css through the W3C markup validation service I
 To make sure my project was compatible with the following browsers, I viewed my project in them and made sure the responsiveness worked 
 effectively across all screen sizes.
 
-- Google Chrome 
+- [Google Chrome] (https://www.google.co.uk/chrome/?brand=CHBD&gclid=EAIaIQobChMI6dyd7tyG6wIVUuztCh2F4ALVEAAYASAAEgJsp_D_BwE&gclsrc=aw.ds)
 
-- Mozilla Firefox 
+- [Mozilla Firefox] (https://www.mozilla.org/en-GB/firefox/new/)
 
-- Safari 
+- [Safari] (https://www.apple.com/uk/safari/) 
 
 ## Testing the functionality of all links 
 
@@ -402,6 +404,8 @@ Here is the following process that I used to deploy my project on Github pages:
 
 - This deployed my project onto ‘Github pages’ and now others will be able to access it. 
 
+If you would like to view my project click [here] (https://jthomp1993.github.io/Milestone-Project-1-UCFD/)
+
 ## Cloning 
 
 If you would like to deploy your own version of my project and develop it even further use the following steps:
@@ -418,17 +422,19 @@ If you would like to deploy your own version of my project and develop it even f
 
 - Now all you need to do is press enter and doing so will create your local clone which you can work on yourself. 
 
+If you would like to learn more about cloning click [here] (https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
 ## Credits 
 
 ### Images 
 
 All of the club logo images were taken from:
 
-- Google images 
+- [Google images] (https://www.google.com/search?q=google+images&source=lnms&tbm=isch&sa=X&ved=2ahUKEwir8r223IbrAhUBilwKHRjwCK0Q_AUoAXoECBkQAw&biw=1440&bih=798) 
 
 The rest of the images were all taken from:
 
-- fcbayern.com 
+- [fcbayern.com] (https://fcbayern.com/en) 
 
 ## Acknowledgements 
 
